@@ -18,10 +18,10 @@
             <Tag class="tl-tag" Color="@GetDamageTypeColor(Model.Timeline.DamageType)">@Model.Timeline.DamageType</Tag>
             <Tag class="tl-tag" Color="default">@Model.Timeline.Actor</Tag>
         </div>
-        @foreach (var actor in Model.Actions)
+        @foreach (var item in Model.Actions)
         {
             <div class="tl-action-col">
-                <ActionList Actions="actor.Actions" ActionClick="action => HandleActionClick(actor.ActorId, action)" />
+                <ActionList Actions="@item.Value" ActionClick="action => HandleActionClick(item.Key, action)" />
             </div>
         }
     </div>
@@ -36,7 +36,8 @@
     public bool IsSelected { get; set; }
 
     [Parameter]
-    public ActionTimelineItemModel? Model { get; set; }
+    [EditorRequired]
+    public TimetableItemModel? Model { get; set; }
 
     [Parameter]
     public EventCallback Click { get; set; }
@@ -60,6 +61,12 @@
         TimelineNodeType.Tankbuster => "Tank Buster",
         _ => ""
     };
+
+    protected override void OnInitialized()
+    {
+        if (Model != null)
+            Model.ActionListChanged += (_, _) => InvokeAsync(StateHasChanged);
+    }
 
     string FormatTimeSpan(TimeSpan? value)
     {
@@ -93,6 +100,6 @@
 
     private async Task HandleActionClick(int actorId, ActionModel action)
     {
-        await ActionClick.InvokeAsync(new ActorAction(actorId, action.Name));
+        await ActionClick.InvokeAsync(new ActorAction(actorId, action));
     }
 }

@@ -2,14 +2,14 @@
 {
     public class ActorAction
     {
-        public ActorAction(int actorId, string actionName)
+        public ActorAction(int actorId, ActionModel action)
         {
             ActorId = actorId;
-            ActionName = actionName;
+            Action = action;
         }
 
         public int ActorId { get; }
 
-        public string ActionName { get; }
+        public ActionModel Action { get; }
     }
 }

@@ -28,10 +28,10 @@
     public ActorModel? Actor { get; set; }
 
     [Parameter]
-    public ActionTimelineModel? Timeline { get; set; }
+    public TimetableModel? Timeline { get; set; }
 
     [Parameter]
-    public ActionTimelineItemModel? TimelineItem { get; set; }
+    public TimetableItemModel? TimelineItem { get; set; }
 
     [Parameter]
     public EventCallback<ActorAction> ActionClick { get; set; }
@@ -55,21 +55,21 @@
         if (TimelineItem == null || Actor == null)
             return ActionSelectionState.Default;
 
-        var actor = TimelineItem.Actions.FirstOrDefault(a => a.ActorId == Actor.ActorId);
-        if (actor == null)
+        var actions = TimelineItem.GetActions(Actor.ActorId);
+        if (actions == null)
             return ActionSelectionState.Default;
 
-        if (actor.Actions.Any(a => a.Name == action.Name))
+        if (actions.Any(a => a.Name == action.Name))
             return ActionSelectionState.Selected;
 
         // TODO: fix this mess
         if (Timeline != null)
         {
-            ActionTimelineItemModel? lastActionUsage = null;
+            TimetableItemModel? lastActionUsage = null;
 
             foreach (var item in Timeline.Items)
             {
-                if (item.Actions.Any(a => a.ActorId == actor.ActorId && a.Actions.Any(x => x.Name == action.Name)))
+                if (item.Actions.Any(a => a.Key == Actor.ActorId && a.Value.Any(x => x.Name == action.Name)))
                 {
                     lastActionUsage = item;
                 }
@@ -99,7 +99,7 @@
         if (Actor == null)
             return;
 
-        await ActionClick.InvokeAsync(new ActorAction(Actor.ActorId, action.Name));
+        await ActionClick.InvokeAsync(new ActorAction(Actor.ActorId, action));
     }
 
     private void HandleActionDragStart(ActionModel action)
@@ -107,7 +107,7 @@
         if (DragContext == null || Actor == null)
             return;
 
-        DragContext.Data = new ActorAction(Actor.ActorId, action.Name);
+        DragContext.Data = new ActorAction(Actor.ActorId, action);
     }
 
     private void HandleActionDragEnd()

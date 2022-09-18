@@ -15,14 +15,14 @@
                 Timeline="@model"
                 TimelineItem="@selectedItem"
                 ActionClick="HandleSelectorActionClick" />
-            <ActionTimelineHeader Actors="@model.Actors"
+            <TimetableHeader Actors="@model.Actors"
                 SelectedActor="@selectedActor"
                 ActorClick="HandleActorClick" />
         </div>
         <div>
             @foreach (var item in @model.Items)
             {
-                <ActionTimelineItem Model="@item"
+                <TimetableItem Model="@item"
                     IsSelected="@(item == selectedItem)"
                     Click="() => HandleItemClick(item)"
                     ActionDrop="a => HandleItemActionDrop(item, a)"
@@ -40,48 +40,50 @@ else
 {
     private readonly DragContext dragContext = new();
 
-    private ActionTimelineItemModel? selectedItem;
+    private TimetableItemModel? selectedItem;
 
     private ActorModel? selectedActor;
 
-    private ActionTimelineModel? model;
+    private TimetableModel? model;
 
     [Parameter]
+    [EditorRequired]
     public string EncounterName { get; set; } = "";
 
     protected override void OnInitialized()
     {
-        if (string.IsNullOrEmpty(EncounterName))
-            return;
-
         model = ActionTimelineService.GetEncounterTimeline(EncounterName);
-        selectedItem = model?.Items?.FirstOrDefault();
-        selectedActor = model?.Actors?.FirstOrDefault();
+
+        if (model != null)
+        {
+            selectedItem = model.Items.FirstOrDefault();
+            selectedActor = model.Actors.FirstOrDefault();
+        }
     }
 
-    private void HandleItemClick(ActionTimelineItemModel item)
+    private void HandleItemClick(TimetableItemModel item)
     {
         selectedItem = item;
     }
 
-    private async Task HandleItemActionClick(ActionTimelineItemModel item, ActorAction action)
+    private async Task HandleItemActionClick(TimetableItemModel item, ActorAction action)
     {
         if (model == null)
             return;
 
-        var added = await ActionTimelineService.RemoveAction(model, item.Id, action.ActorId, action.ActionName);
+        var added = await ActionTimelineService.RemoveAction(model, item.Timeline.Id, action.ActorId, action.Action);
         if (added)
         {
             StateHasChanged();
         }
     }
 
-    private async Task HandleItemActionDrop(ActionTimelineItemModel item, ActorAction action)
+    private async Task HandleItemActionDrop(TimetableItemModel item, ActorAction action)
     {
         if (model == null)
             return;
 
-        var removed = await ActionTimelineService.AddAction(model, item.Id, action.ActorId, action.ActionName);
+        var removed = await ActionTimelineService.AddAction(model, item.Timeline.Id, action.ActorId, action.Action);
         if (removed)
         {
             StateHasChanged();
@@ -93,17 +95,17 @@ else
         if (selectedItem == null || model == null)
             return;
 
-        var actor = selectedItem.Actions.FirstOrDefault(a => a.ActorId == action.ActorId);
-        if (actor == null)
+        var actions = selectedItem.GetActions(action.ActorId);
+        if (actions == null)
             return;
 
-        if (actor.Actions.Any(a => a.Name == action.ActionName))
+        if (actions.Any(a => a.Name == action.Action.Name))
         {
-            await ActionTimelineService.RemoveAction(model, selectedItem.Id, actor.ActorId, action.ActionName);
+            await ActionTimelineService.RemoveAction(model, selectedItem.Timeline.Id, action.ActorId, action.Action);
         }
         else
         {
-            await ActionTimelineService.AddAction(model, selectedItem.Id, actor.ActorId, action.ActionName);
+            await ActionTimelineService.AddAction(model, selectedItem.Timeline.Id, action.ActorId, action.Action);
         }
 
         StateHasChanged();

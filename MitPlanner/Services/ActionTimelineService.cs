@@ -1,4 +1,5 @@
-﻿using MitPlanner.Data;
+﻿using AntDesign;
+using MitPlanner.Data;
 using MitPlanner.Data.Model;
 using MitPlanner.Model;
 
@@ -11,7 +12,7 @@ namespace MitPlanner.Services
         private readonly JobRepository jobRepository;
         private readonly JobActionService actionService;
 
-        private readonly Dictionary<string, ActionTimelineModel> data;
+        private readonly Dictionary<string, TimetableModel> data;
 
         public ActionTimelineService(
             ActionTimelineRepository timelineRepository,
@@ -26,65 +27,50 @@ namespace MitPlanner.Services
             data = LoadData();
         }
 
-        public ActionTimelineModel? GetEncounterTimeline(string encounterId)
+        public TimetableModel? GetEncounterTimeline(string encounterId)
         {
             return data.TryGetValue(encounterId, out var result)
                 ? result
                 : null;
         }
 
-        public async Task<bool> AddAction(ActionTimelineModel timeline, int timelineItemId, int actorId, string actionName)
+        public async Task<bool> AddAction(
+            TimetableModel timetable,
+            int timelineNodeId,
+            int actorId,
+            ActionModel action)
         {
-            var timelineItem = timeline.Items.FirstOrDefault(t => t.Id == timelineItemId);
-            if (timelineItem == null)
-                return false;
-
-            var actor = timelineItem.Actions.FirstOrDefault(a => a.ActorId == actorId);
-            if (actor == null)
-                return false;
-
-            if (actor.Actions.Count >= 5)
-                return false;
-
-            if (actor.Actions.Any(a => a.Name == actionName))
-                return false;
-
-            var action = actionService.GetAction(actionName);
-            if (action == null)
-                return false;
-
-            actor.Actions.Add(action);
-
-            var entity = new TimelineAction
-            {
-                ActionName = actionName,
-                ActionTimelineId = timeline.Id,
-                TimelineNodeId = timelineItemId,
-                TimelineActorId = actorId
-            };
-
-            await timelineRepository.AddTimelineActorActionAsync(entity);
-
-            return true;
-        }
-
-        public async Task<bool> RemoveAction(ActionTimelineModel timeline, int timelineItemId, int actorId, string actionName)
-        {
-            var timelineItem = timeline.Items.FirstOrDefault(t => t.Id == timelineItemId);
-            if (timelineItem == null)
-                return false;
-
-            var actor = timelineItem.Actions.FirstOrDefault(a => a.ActorId == actorId);
-            if (actor == null)
-                return false;
-
-            if (actor.Actions.RemoveAll(a => a.Name == actionName) > 0)
+            if (timetable.AddAction(timelineNodeId, actorId, action))
             {
                 var entity = new TimelineAction
                 {
-                    ActionName = actionName,
-                    ActionTimelineId = timeline.Id,
-                    TimelineNodeId = timelineItemId,
+                    ActionName = action.Name,
+                    ActionTimelineId = timetable.Id,
+                    TimelineNodeId = timelineNodeId,
+                    TimelineActorId = actorId
+                };
+
+                await timelineRepository.AddTimelineActorActionAsync(entity);
+
+                return true;
+            }
+
+            return false;
+        }
+
+        public async Task<bool> RemoveAction(
+            TimetableModel timetable,
+            int timelineNodeId,
+            int actorId,
+            ActionModel action)
+        {
+            if (timetable.RemoveAction(timelineNodeId, actorId, action))
+            {
+                var entity = new TimelineAction
+                {
+                    ActionName = action.Name,
+                    ActionTimelineId = timetable.Id,
+                    TimelineNodeId = timelineNodeId,
                     TimelineActorId = actorId
                 };
 
@@ -96,13 +82,13 @@ namespace MitPlanner.Services
             return false;
         }
 
-        private Dictionary<string, ActionTimelineModel> LoadData()
+        private Dictionary<string, TimetableModel> LoadData()
         {
             // TODO: sort out mess below
 
             var timelines = timelineRepository.GetTimelines();
 
-            var data = new Dictionary<string, ActionTimelineModel>(timelines.Count);
+            var data = new Dictionary<string, TimetableModel>(timelines.Count);
 
             foreach (var tl in timelines)
             {
@@ -110,25 +96,25 @@ namespace MitPlanner.Services
                 if (encounter == null)
                     continue;
 
-                var timelineModel = new ActionTimelineModel(tl.Id, tl.EncounterId);
-                timelineModel.Actors.AddRange(tl.TimelineActors.Select(MapToModel));
+                var actors = tl.TimelineActors.Select(MapToModel).ToArray();
+                var items = new List<TimetableItemModel>(encounter.Timeline.Count);
 
                 foreach (var item in encounter.Timeline)
                 {
-                    var timelineItemModel = new ActionTimelineItemModel(item.Id, item);
+                    var actions = new Dictionary<int, List<ActionModel>>(tl.TimelineActors.Count);
 
                     foreach (var actor in tl.TimelineActors)
                     {
-                        var actions = actor.TimelineActions.Where(a => a.TimelineNodeId == item.Id);
-                        var actorModel = new ActorActionListModel(actor.Id, actor.JobId);
-                        actorModel.Actions.AddRange(actions.Select(MapToModel));
-                        timelineItemModel.Actions.Add(actorModel);
+                        actions[actor.Id] = actor.TimelineActions
+                            .Where(a => a.TimelineNodeId == item.Id)
+                            .Select(MapToModel)
+                            .ToList();
                     }
 
-                    timelineModel.Items.Add(timelineItemModel);
+                    items.Add(new TimetableItemModel(item.Id, item, actions));
                 }
 
-                data[tl.EncounterId] = timelineModel;
+                data[tl.EncounterId] = new TimetableModel(tl.Id, tl.EncounterId, actors, items);
             }
 
             return data;
