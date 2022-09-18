@@ -5,6 +5,8 @@
 @inject ActionTimelineService ActionTimelineService
 @inject JobActionService JobActionService
 
+@inject IJSRuntime JS
+
 @if (model != null)
 {
     <CascadingValue Value="@dragContext">
@@ -110,6 +112,14 @@ else
     private void HandleActorClick(ActorModel actor)
     {
         selectedActor = actor;
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            JS.InvokeVoidAsync("initTimelineItemDragEvents");
+        }
     }
 }
 

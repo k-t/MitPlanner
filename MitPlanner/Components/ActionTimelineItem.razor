@@ -4,8 +4,6 @@
 @using MitPlanner.Services;
 @using MitPlanner.Utilities;
 
-@inject IJSRuntime JS
-
 @if (Model != null)
 {
     <div class="tl-item @(IsSelected ? "tl-selected" : "")" @ondrop="HandleDrop" @onclick="HandleClick">
@@ -96,13 +94,5 @@
     private async Task HandleActionClick(int actorId, ActionModel action)
     {
         await ActionClick.InvokeAsync(new ActorAction(actorId, action.Name));
-    }
-
-    protected override void OnAfterRender(bool firstRender)
-    {
-        if (firstRender)
-        {
-            JS.InvokeVoidAsync("initTimelineItemDragEvents");
-        }
     }
 }
