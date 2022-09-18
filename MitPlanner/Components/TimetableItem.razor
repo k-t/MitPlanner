@@ -12,9 +12,17 @@
             <span>@FormatTimeSpan(Model.Timeline.End)</span>
         </div>
         <div class="tl-name-col">
-            <div class="tl-title" title="@TitleTooltip">
-                <Text Type="@TitleType">@Model.Timeline.Name</Text>
+            <div class="tl-title">
+                @Model.Timeline.Name
             </div>
+            @if (Model.Timeline.Type == TimelineNodeType.Raidwide)
+            {
+                <Tag class="tl-tag" Color="error">Raidwide</Tag>
+            }
+            @if (Model.Timeline.Type == TimelineNodeType.Tankbuster)
+            {
+                <Tag class="tl-tag" Color="warning">TB</Tag>
+            }
             <Tag class="tl-tag" Color="@GetDamageTypeColor(Model.Timeline.DamageType)">@Model.Timeline.DamageType</Tag>
             <Tag class="tl-tag" Color="default">@Model.Timeline.Actor</Tag>
         </div>
