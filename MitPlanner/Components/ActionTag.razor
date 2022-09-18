@@ -2,19 +2,22 @@
 @using MitPlanner.Model
 @using MitPlanner.Utilities;
 
-<div class="action-tag @StateClass" title="@Tooltip"
-    @onclick="HandleClick"
-    draggable="true"
-    @ondragstart="HandleDragStart"
-    @ondragend="HandleDragEnd">
-    <img src="@Helpers.GetActionImageUrl(Action.Name)" alt="@Action.Title" draggable="false" />
-    <span>@Action.Title<span class="action-tag-recast">&nbsp;@(Action.Recast.TotalSeconds)s</span></span>
-</div>
+@if (Action != null)
+{
+    <div class="action-tag @StateClass" title="@Tooltip"
+         @onclick="HandleClick"
+         draggable="true"
+         @ondragstart="HandleDragStart"
+         @ondragend="HandleDragEnd">
+        <img src="@Helpers.GetActionImageUrl(Action.Name)" alt="@Action.Title" draggable="false" />
+        <span>@Action.Title<span class="action-tag-recast">&nbsp;@(Action.Recast.TotalSeconds)s</span></span>
+    </div>
+}
 
 @code
 {
     [Parameter]
-    public ActionModel Action { get; set; }
+    public ActionModel? Action { get; set; }
 
     [Parameter]
     public ActionSelectionState State { get; set; }
@@ -35,23 +38,26 @@
         _ => ""
     };
 
-    string Tooltip
+    string? Tooltip
     {
-        get { return Action.Name; }
+        get { return Action?.Name; }
     }
 
     private async Task HandleClick()
     {
-        await Click.InvokeAsync(Action);
+        if (Action != null)
+            await Click.InvokeAsync(Action);
     }
 
     private async Task HandleDragStart()
     {
-        await DragStart.InvokeAsync(Action);
+        if (Action != null)
+            await DragStart.InvokeAsync(Action);
     }
 
     private async Task HandleDragEnd()
     {
-        await DragEnd.InvokeAsync();
+        if (Action != null)
+            await DragEnd.InvokeAsync();
     }
 }

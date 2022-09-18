@@ -115,23 +115,14 @@ namespace MitPlanner.Services
 
                 foreach (var item in encounter.Timeline)
                 {
-                    var timelineItemModel = new ActionTimelineItemModel
-                    {
-                        Id = item.Id,
-                        Timeline = item,
-                        Actions = new List<ActorActionListModel>(tl.TimelineActors.Count)
-                    };
+                    var timelineItemModel = new ActionTimelineItemModel(item.Id, item);
 
                     foreach (var actor in tl.TimelineActors)
                     {
                         var actions = actor.TimelineActions.Where(a => a.TimelineNodeId == item.Id);
-
-                        timelineItemModel.Actions.Add(new ActorActionListModel
-                        {
-                            ActorId = actor.Id,
-                            JobId = actor.JobId,
-                            Actions = actions.Select(MapToModel).ToList()
-                        });
+                        var actorModel = new ActorActionListModel(actor.Id, actor.JobId);
+                        actorModel.Actions.AddRange(actions.Select(MapToModel));
+                        timelineItemModel.Actions.Add(actorModel);
                     }
 
                     timelineModel.Items.Add(timelineItemModel);

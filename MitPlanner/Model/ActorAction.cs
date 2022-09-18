@@ -2,8 +2,14 @@
 {
     public class ActorAction
     {
-        public int ActorId { get; set; }
+        public ActorAction(int actorId, string actionName)
+        {
+            ActorId = actorId;
+            ActionName = actionName;
+        }
 
-        public string ActionName { get; set; }
+        public int ActorId { get; }
+
+        public string ActionName { get; }
     }
 }

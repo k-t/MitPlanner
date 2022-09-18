@@ -95,13 +95,7 @@
 
     private async Task HandleActionClick(int actorId, ActionModel action)
     {
-        await ActionClick.InvokeAsync(
-            new ActorAction
-            {
-                ActorId = actorId,
-                ActionName = action.Name
-            }
-        );
+        await ActionClick.InvokeAsync(new ActorAction(actorId, action.Name));
     }
 
     protected override void OnAfterRender(bool firstRender)

@@ -10,6 +10,6 @@
 
         public int TimelineActorId { get; set; }
 
-        public string ActionName { get; set; }
+        public string ActionName { get; set; } = "";
     }
 }

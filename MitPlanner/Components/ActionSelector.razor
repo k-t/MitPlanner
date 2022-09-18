@@ -65,7 +65,7 @@
         // TODO: fix this mess
         if (Timeline != null)
         {
-            ActionTimelineItemModel lastActionUsage = null;
+            ActionTimelineItemModel? lastActionUsage = null;
 
             foreach (var item in Timeline.Items)
             {
@@ -99,13 +99,7 @@
         if (Actor == null)
             return;
 
-        await ActionClick.InvokeAsync(
-            new ActorAction
-            {
-                ActorId = Actor.ActorId,
-                ActionName = action.Name
-            }
-        );
+        await ActionClick.InvokeAsync(new ActorAction(Actor.ActorId, action.Name));
     }
 
     private void HandleActionDragStart(ActionModel action)
@@ -113,11 +107,7 @@
         if (DragContext == null || Actor == null)
             return;
 
-        DragContext.Data = new ActorAction
-        {
-            ActorId = Actor.ActorId,
-            ActionName = action.Name
-        };
+        DragContext.Data = new ActorAction(Actor.ActorId, action.Name);
     }
 
     private void HandleActionDragEnd()

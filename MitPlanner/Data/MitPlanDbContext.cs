@@ -12,11 +12,11 @@ namespace MitPlanner.Data
             this.dbPath = dbPath;
         }
 
-        public DbSet<ActionTimeline> ActionTimelines { get; set; }
+        public DbSet<ActionTimeline> ActionTimelines => Set<ActionTimeline>();
 
-        public DbSet<TimelineActor> TimelineActors { get; set; }
+        public DbSet<TimelineActor> TimelineActors => Set<TimelineActor>();
 
-        public DbSet<TimelineAction> TimelineActions { get; set; }
+        public DbSet<TimelineAction> TimelineActions => Set<TimelineAction>();
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
@@ -80,10 +80,10 @@ namespace MitPlanner.Data
 
             modelBuilder.Entity<ActionTimeline>()
                 .HasData(
-                    new ActionTimeline { Id = 1, EncounterId = "p5s" },
-                    new ActionTimeline { Id = 2, EncounterId = "p6s" },
-                    new ActionTimeline { Id = 3, EncounterId = "p7s" }
-                );
+                    new ActionTimeline(1, "p5s"),
+                    new ActionTimeline(2, "p6s"),
+                    new ActionTimeline(3, "p7s")
+                );;
 
             modelBuilder.Entity<TimelineActor>().HasData(GenerateTimelineActors(3));
         }
@@ -95,7 +95,7 @@ namespace MitPlanner.Data
             var id = 1;
             for (int timelineId = 1; timelineId <= timelineCount; timelineId++)
                 foreach (var job in DefaultJobs)
-                    yield return new TimelineActor { Id = id++, ActionTimelineId = timelineId, JobId = job };
+                    yield return new TimelineActor(id++, timelineId, job);
         }
     }
 }

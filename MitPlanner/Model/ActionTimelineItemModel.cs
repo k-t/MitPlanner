@@ -4,10 +4,17 @@ namespace MitPlanner.Model
 {
     public class ActionTimelineItemModel
     {
-        public int Id { get; set; }
+        public ActionTimelineItemModel(int id, TimelineNode timelineNode)
+        {
+            Id = id;
+            Timeline = timelineNode;
+            Actions = new List<ActorActionListModel>();
+        }
 
-        public TimelineNode Timeline { get; set; }
+        public int Id { get; }
 
-        public List<ActorActionListModel> Actions { get; set; }
+        public TimelineNode Timeline { get; }
+
+        public List<ActorActionListModel> Actions { get; }
     }
 }

@@ -64,6 +64,9 @@ else
 
     private async Task HandleItemActionClick(ActionTimelineItemModel item, ActorAction action)
     {
+        if (model == null)
+            return;
+
         var added = await ActionTimelineService.RemoveAction(model, item.Id, action.ActorId, action.ActionName);
         if (added)
         {
@@ -73,6 +76,9 @@ else
 
     private async Task HandleItemActionDrop(ActionTimelineItemModel item, ActorAction action)
     {
+        if (model == null)
+            return;
+
         var removed = await ActionTimelineService.AddAction(model, item.Id, action.ActorId, action.ActionName);
         if (removed)
         {
@@ -82,7 +88,7 @@ else
 
     private async Task HandleSelectorActionClick(ActorAction action)
     {
-        if (selectedItem == null)
+        if (selectedItem == null || model == null)
             return;
 
         var actor = selectedItem.Actions.FirstOrDefault(a => a.ActorId == action.ActorId);

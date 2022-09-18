@@ -2,10 +2,17 @@
 {
     public class ActorActionListModel
     {
-        public int ActorId { get; set; }
+        public ActorActionListModel(int actorId, string jobId)
+        {
+            ActorId = actorId;
+            JobId = jobId;
+            Actions = new List<ActionModel>();
+        }
 
-        public string JobId { get; set; }
+        public int ActorId { get; }
 
-        public List<ActionModel> Actions { get; set; }
+        public string JobId { get; }
+
+        public List<ActionModel> Actions { get; }
     }
 }
