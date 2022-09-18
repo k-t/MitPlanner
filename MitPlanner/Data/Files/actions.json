@@ -1,0 +1,437 @@
+[
+  {
+    "name": "reprisal",
+    "title": "Reprisal",
+    "recast": 60.0,
+    "duration": 10.0,
+    "role": "tank"
+  },
+  {
+    "name": "rampart",
+    "title": "Rampart",
+    "recast": 90.0,
+    "duration": 20.0,
+    "role": "tank"
+  },
+  {
+    "name": "addle",
+    "title": "Addle",
+    "recast": 90.0,
+    "duration": 10.0,
+    "role": "caster"
+  },
+  {
+    "name": "feint",
+    "title": "Feint",
+    "recast": 90.0,
+    "duration": 10.0,
+    "role": "melee"
+  },
+  {
+    "name": "shake_it_off",
+    "title": "Shake It Off",
+    "recast": 90.0,
+    "duration": 0.0,
+    "job": "WAR"
+  },
+  {
+    "name": "vengeance",
+    "title": "Vengeance",
+    "recast": 120.0,
+    "duration": 15.0,
+    "job": "WAR"
+  },
+  {
+    "name": "thrill_of_battle",
+    "title": "Thrill of Battle",
+    "recast": 90.0,
+    "duration": 10.0,
+    "job": "WAR"
+  },
+  {
+    "name": "holmgang",
+    "title": "Holmgang",
+    "recast": 240.0,
+    "duration": 10.0,
+    "job": "WAR"
+  },
+  {
+    "name": "bloodwhetting",
+    "title": "Bloodwhetting",
+    "recast": 25.0,
+    "duration": 8.0,
+    "job": "WAR"
+  },
+  {
+    "name": "dark_missionary",
+    "title": "Dark Missionary",
+    "recast": 90.0,
+    "duration": 15.0,
+    "job": "DRK"
+  },
+  {
+    "name": "shadow_wall",
+    "title": "Shadow Wall",
+    "recast": 120.0,
+    "duration": 15.0,
+    "job": "DRK"
+  },
+  {
+    "name": "dark_mind",
+    "title": "Dark Mind",
+    "recast": 60.0,
+    "duration": 10.0,
+    "job": "DRK"
+  },
+  {
+    "name": "living_dead",
+    "title": "Living Dead",
+    "recast": 300.0,
+    "duration": 10.0,
+    "job": "DRK"
+  },
+  {
+    "name": "divine_veil",
+    "title": "Divine Veil",
+    "recast": 90.0,
+    "duration": 0.0,
+    "job": "PLD"
+  },
+  {
+    "name": "passage_of_arms",
+    "title": "Passage of Arms",
+    "recast": 120.0,
+    "duration": 0.0,
+    "job": "PLD"
+  },
+  {
+    "name": "sentinel",
+    "title": "Sentinel",
+    "recast": 120.0,
+    "duration": 15.0,
+    "job": "PLD"
+  },
+  {
+    "name": "hallowed_ground",
+    "title": "Hallowed Ground",
+    "recast": 420.0,
+    "duration": 10.0,
+    "job": "PLD"
+  },
+  {
+    "name": "nebula",
+    "title": "Nebula",
+    "recast": 120.0,
+    "duration": 15.0,
+    "job": "GNB"
+  },
+  {
+    "name": "camouflage",
+    "title": "Camouflage",
+    "recast": 90.0,
+    "duration": 20.0,
+    "job": "GNB"
+  },
+  {
+    "name": "heart_of_light",
+    "title": "Heart of Light",
+    "recast": 90.0,
+    "duration": 15.0,
+    "job": "GNB"
+  },
+  {
+    "name": "superbolide",
+    "title": "Superbolide",
+    "recast": 360.0,
+    "duration": 10.0,
+    "job": "GNB"
+  },
+  {
+    "name": "heart_of_corundum",
+    "title": "Heart of Corundum",
+    "recast": 25.0,
+    "duration": 8.0,
+    "job": "GNB"
+  },
+  {
+    "name": "whispering_dawn",
+    "title": "Whispering Dawn",
+    "recast": 60.0,
+    "duration": 21.0,
+    "job": "SCH"
+  },
+  {
+    "name": "fey_illumination",
+    "title": "Fey Illumination",
+    "recast": 120.0,
+    "duration": 20.0,
+    "job": "SCH"
+  },
+  {
+    "name": "sacred_soil",
+    "title": "Sacred Soil",
+    "recast": 30.0,
+    "duration": 15.0,
+    "job": "SCH"
+  },
+  {
+    "name": "indomitability",
+    "title": "Indomitability",
+    "recast": 30.0,
+    "duration": 0.0,
+    "job": "SCH"
+  },
+  {
+    "name": "deployment_tactics",
+    "title": "Deployment Tactics",
+    "recast": 90.0,
+    "duration": 0.0,
+    "job": "SCH"
+  },
+  {
+    "name": "dissipation",
+    "title": "Dissipation",
+    "recast": 180.0,
+    "duration": 0.0,
+    "job": "SCH"
+  },
+  {
+    "name": "excogitation",
+    "title": "Excogitation",
+    "recast": 45.0,
+    "duration": 0.0,
+    "job": "SCH"
+  },
+  {
+    "name": "recitation",
+    "title": "Recitation",
+    "recast": 90.0,
+    "duration": 0.0,
+    "job": "SCH"
+  },
+  {
+    "name": "fey_blessing",
+    "title": "Fey Blessing",
+    "recast": 60.0,
+    "duration": 0.0,
+    "job": "SCH"
+  },
+  {
+    "name": "summon_seraph",
+    "title": "Summon Seraph",
+    "recast": 120.0,
+    "duration": 22.0,
+    "job": "SCH"
+  },
+  {
+    "name": "protraction",
+    "title": "Protraction",
+    "recast": 60.0,
+    "duration": 10.0,
+    "job": "SCH"
+  },
+  {
+    "name": "expedient",
+    "title": "Expedient",
+    "recast": 120.0,
+    "duration": 20.0,
+    "job": "SCH"
+  },
+  {
+    "name": "assize",
+    "title": "Assize",
+    "recast": 45.0,
+    "duration": 0.0,
+    "job": "WHM"
+  },
+  {
+    "name": "temperance",
+    "title": "Temperance",
+    "recast": 120.0,
+    "duration": 20.0,
+    "job": "WHM"
+  },
+  {
+    "name": "aquaveil",
+    "title": "Aquaveil",
+    "recast": 60.0,
+    "duration": 8.0,
+    "job": "WHM"
+  },
+  {
+    "name": "liturgy_of_the_bell",
+    "title": "Liturgy of the Bell",
+    "recast": 180.0,
+    "duration": 20.0,
+    "job": "WHM"
+  },
+  {
+    "name": "plenary_indulgence",
+    "title": "Plenary Indulgence",
+    "recast": 60.0,
+    "duration": 10.0,
+    "job": "WHM"
+  },
+  {
+    "name": "asylum",
+    "title": "Asylum",
+    "recast": 90.0,
+    "duration": 24.0,
+    "job": "WHM"
+  },
+  {
+    "name": "tetragrammaton",
+    "title": "Tetragrammaton",
+    "recast": 60.0,
+    "duration": 0,
+    "job": "WHM"
+  },
+  {
+    "name": "collective_unconscious",
+    "title": "Collective Unconscious",
+    "recast": 60.0,
+    "duration": 0.0,
+    "job": "AST"
+  },
+  {
+    "name": "celestial_opposition",
+    "title": "Celestial Opposition",
+    "recast": 60.0,
+    "duration": 0.0,
+    "job": "AST"
+  },
+  {
+    "name": "earthly_star",
+    "title": "Earthly Star",
+    "recast": 60.0,
+    "duration": 0.0,
+    "job": "AST"
+  },
+  {
+    "name": "neutral_sect",
+    "title": "Neutral Sect",
+    "recast": 120.0,
+    "duration": 20.0,
+    "job": "AST"
+  },
+  {
+    "name": "exaltation",
+    "title": "Exaltation",
+    "recast": 60.0,
+    "duration": 8.0,
+    "job": "AST"
+  },
+  {
+    "name": "macrocosmos",
+    "title": "Macrocosmos",
+    "recast": 180.0,
+    "duration": 0.0,
+    "job": "AST"
+  },
+  {
+    "name": "physis_II",
+    "title": "Physis II",
+    "recast": 60.0,
+    "duration": 10.0,
+    "job": "SGE"
+  },
+  {
+    "name": "kerachole",
+    "title": "Kerachole",
+    "recast": 30.0,
+    "duration": 15.0,
+    "job": "SGE"
+  },
+  {
+    "name": "ixochole",
+    "title": "Ixochole",
+    "recast": 30.0,
+    "duration": 0.0,
+    "job": "SGE"
+  },
+  {
+    "name": "zoe",
+    "title": "Zoe",
+    "recast": 90.0,
+    "duration": 0.0,
+    "job": "SGE"
+  },
+  {
+    "name": "taurochole",
+    "title": "Taurochole",
+    "recast": 45.0,
+    "duration": 15.0,
+    "job": "SGE"
+  },
+  {
+    "name": "haima",
+    "title": "Haima",
+    "recast": 120.0,
+    "duration": 0.0,
+    "job": "SGE"
+  },
+  {
+    "name": "holos",
+    "title": "Holos",
+    "recast": 120.0,
+    "duration": 20.0,
+    "job": "SGE"
+  },
+  {
+    "name": "panhaima",
+    "title": "Panhaima",
+    "recast": 120.0,
+    "duration": 0.0,
+    "job": "SGE"
+  },
+  {
+    "name": "krasis",
+    "title": "Krasis",
+    "recast": 60.0,
+    "duration": 10.0,
+    "job": "SGE"
+  },
+  {
+    "name": "pneuma",
+    "title": "Pneuma",
+    "recast": 120.0,
+    "duration": 0.0,
+    "job": "SGE"
+  },
+  {
+    "name": "magick_barrier",
+    "title": "Magick Barrier",
+    "recast": 120.0,
+    "duration": 10.0,
+    "job": "RDM"
+  },
+  {
+    "name": "mantra",
+    "title": "Mantra",
+    "recast": 90.0,
+    "duration": 15.0,
+    "job": "MNK"
+  },
+  {
+    "name": "tactician",
+    "title": "Tactician",
+    "recast": 90.0,
+    "duration": 15.0,
+    "job": "MCH"
+  },
+  {
+    "name": "troubadour",
+    "title": "Troubadour",
+    "recast": 90.0,
+    "duration": 15.0,
+    "job": "BRD"
+  },
+  {
+    "name": "shield_samba",
+    "title": "Shield Samba",
+    "recast": 90.0,
+    "duration": 15.0,
+    "job": "DNC"
+  }
+]
+

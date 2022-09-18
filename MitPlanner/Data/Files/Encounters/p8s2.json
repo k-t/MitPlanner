@@ -1,0 +1,558 @@
+{
+  "encounterName": "p8s2",
+  "timeline": [
+    {
+      "start": 0.0,
+      "end": 0.0,
+      "name": "Pull",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 10.0,
+      "end": 15.0,
+      "name": "Aioniopyr",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 21.0,
+      "end": 747.0,
+      "name": "Tyrant's Unholy Darkness",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 35.0,
+      "end": 40.0,
+      "name": "Natural Alignment",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 46.0,
+      "end": 49.0,
+      "name": "Twist Nature",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 52.0,
+      "end": 55.0,
+      "name": "Tyrant's Flare",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 58.0,
+      "name": "Forcible Fire III",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 58.0,
+      "end": 64.0,
+      "name": "Ashing Blaze",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 64.0,
+      "name": "Forcible Fire II",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 76.0,
+      "name": "Forcible Difreeze",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 76.0,
+      "name": "End of Days",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 82.0,
+      "name": "Forcible Trifire",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 82.0,
+      "name": "End of Days",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 83.0,
+      "end": 88.0,
+      "name": "Aioniopyr",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 96.0,
+      "end": 103.0,
+      "name": "Tyrant's Unholy Darkness",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 109.0,
+      "end": 114.0,
+      "name": "High Concept",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 123.0,
+      "end": 126.0,
+      "name": "Arcane Control",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 126.0,
+      "name": "Conceptual Shift",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 126.0,
+      "name": "Splicer",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 132.0,
+      "end": 138.0,
+      "name": "Ashing Blaze",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 138.0,
+      "name": "Arcane Channel",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 144.0,
+      "name": "Conceptual Shift",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 141.0,
+      "end": 144.0,
+      "name": "Arcane Control",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 150.0,
+      "end": 156.0,
+      "name": "Ashing Blaze",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 156.0,
+      "name": "Arcane Channel",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 159.0,
+      "end": 162.0,
+      "name": "Deconceptualize",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 166.0,
+      "end": 171.0,
+      "name": "Aioniopyr",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 180.0,
+      "end": 185.0,
+      "name": "Limitless Desolation",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 186.0,
+      "name": "Tyrant's Fire III (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 189.0,
+      "name": "Tyrant's Fire III (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 192.0,
+      "name": "Tyrant's Fire III (3)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 195.0,
+      "name": "Tyrant's Fire III (4)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 194.0,
+      "end": 197.0,
+      "name": "Tyrant's Flare II (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 197.0,
+      "name": "Burst (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 197.0,
+      "end": 200.0,
+      "name": "Tyrant's Flare II (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 200.0,
+      "name": "Burst (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 200.0,
+      "end": 203.0,
+      "name": "Tyrant's Flare II (3)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 203.0,
+      "name": "Burst (3)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 203.0,
+      "end": 206.0,
+      "name": "Tyrant's Flare II (4)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 206.0,
+      "name": "Burst (4)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 208.0,
+      "end": 213.0,
+      "name": "Aioniopyr",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 221.0,
+      "end": 227.0,
+      "name": "Tyrant's Unholy Darkness",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 237.0,
+      "end": 242.0,
+      "name": "Natural Alignment",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 245.0,
+      "end": 248.0,
+      "name": "Inverse Magicks",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 251.0,
+      "end": 254.0,
+      "name": "Twist Nature",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 263.0,
+      "name": "Forcible Fire II/III",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 263.0,
+      "name": "End of Days",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 269.0,
+      "name": "Forcible Fire III/II",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 269.0,
+      "name": "End of Days",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 282.0,
+      "name": "Forcible Trifire",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 282.0,
+      "name": "End of Days",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 288.0,
+      "name": "Forcible Difreeze",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 288.0,
+      "name": "End of Days",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 288.0,
+      "end": 294.0,
+      "name": "Ashing Blaze",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 296.0,
+      "end": 302.0,
+      "name": "Aioniopyr",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 311.0,
+      "end": 317.0,
+      "name": "Tyrant's Unholy Darkness",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 323.0,
+      "end": 332.0,
+      "name": "High Concept",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 337.0,
+      "end": 340.0,
+      "name": "Arcane Control",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 340.0,
+      "name": "Conceptual Shift",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 340.0,
+      "name": "Splicer",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 352.0,
+      "name": "Arcane Channel",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 346.0,
+      "end": 352.0,
+      "name": "Ashing Blaze",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 355.0,
+      "end": 358.0,
+      "name": "Arcane Control",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 358.0,
+      "name": "Conceptual Shift",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 370.0,
+      "name": "End of Days",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 370.0,
+      "name": "Arcane Channel",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 380.0,
+      "end": 391.0,
+      "name": "Ego Death",
+      "damageType": "Death*",
+      "actor": "Boss"
+    },
+    {
+      "start": 417.0,
+      "end": 425.0,
+      "name": "Aionagonia",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 428.0,
+      "end": 435.0,
+      "name": "Dominion",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 436.0,
+      "name": "Orogenic Deformation",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 436.0,
+      "end": 443.0,
+      "name": "Orogenic Shift (1)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 442.0,
+      "end": 449.0,
+      "name": "Orogenic Shift (2)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 446.0,
+      "end": 454.0,
+      "name": "Aionagonia",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 457.0,
+      "end": 464.0,
+      "name": "Dominion",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 465.0,
+      "name": "Orogenic Deformation",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 465.0,
+      "end": 472.0,
+      "name": "Orogenic Shift (1)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 471.0,
+      "end": 478.0,
+      "name": "Orogenic Shift (2)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 475.0,
+      "end": 483.0,
+      "name": "Aionagonia",
+      "damageType": "Magic ",
+      "actor": "Boss"
+    },
+    {
+      "start": 490.0,
+      "end": 506.0,
+      "name": "Ego Death",
+      "damageType": "Death",
+      "actor": "Boss"
+    }
+  ]
+}

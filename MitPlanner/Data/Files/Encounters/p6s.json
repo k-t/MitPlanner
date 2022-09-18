@@ -1,0 +1,746 @@
+{
+  "encounterName": "p6s",
+  "timeline": [
+    {
+      "start": 0.0,
+      "end": 0.0,
+      "name": "Pull",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 8.0,
+      "end": 13.0,
+      "name": "Hemitheos's Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 20.0,
+      "end": 27.0,
+      "name": "Chelic Synergy",
+      "damageType": "Physical",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 37.0,
+      "end": 41.0,
+      "name": "Aetheric Polyominoid",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 44.0,
+      "end": 48.0,
+      "name": "Unholy Darkness (Indicator)",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 50.0,
+      "end": 54.0,
+      "name": "Exocleaver (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 54.0,
+      "name": "Polyominous Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 56.0,
+      "name": "Unholy Darkness (Action)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 57.0,
+      "name": "Exocleaver (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 63.0,
+      "end": 71.0,
+      "name": "Pathogenic Cells (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 73.0,
+      "name": "Pathogenic Cells (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 75.0,
+      "name": "Pathogenic Cells (3)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 77.0,
+      "name": "Pathogenic Cells (4)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 79.0,
+      "name": "Pathogenic Cells (5)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 81.0,
+      "name": "Pathogenic Cells (6)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 83.0,
+      "name": "Pathogenic Cells (7)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 85.0,
+      "name": "Pathogenic Cells (8)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 93.0,
+      "end": 96.0,
+      "name": "Aetherical Exchange",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 98.0,
+      "end": 102.0,
+      "name": "Exchange of Agonies",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 105.0,
+      "end": 110.0,
+      "name": "Choros Ixou (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 110.0,
+      "name": "Darkburst",
+      "damageType": "Magic ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 110.0,
+      "name": "Dark Perimeter",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 110.0,
+      "name": "Unholy Darkness",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 113.0,
+      "name": "Choros Ixou (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 120.0,
+      "end": 127.0,
+      "name": "Synergy",
+      "damageType": "Physical/Magical",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 135.0,
+      "end": 140.0,
+      "name": "Hemitheos's Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 146.0,
+      "end": 151.0,
+      "name": "Transmission",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 160.0,
+      "end": 165.0,
+      "name": "Choros Ixou (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 166.0,
+      "name": "Chelic Claw/Reek Havoc",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 167.0,
+      "name": "Choros Ixou (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 174.0,
+      "end": 177.0,
+      "name": "Aetherial Exhange",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 180.0,
+      "end": 184.0,
+      "name": "Polyominoid Sigma",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 188.0,
+      "end": 193.0,
+      "name": "Dark Dome (Indicator)",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 198.0,
+      "name": "Polyominous Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 198.0,
+      "name": "Dark Dome (Action)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 205.0,
+      "end": 208.0,
+      "name": "Aetherial Exchange",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 210.0,
+      "end": 214.0,
+      "name": "Exchange of Agonies",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 218.0,
+      "end": 222.0,
+      "name": "Exocleaver (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 222.0,
+      "name": "Unholy Darkness",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 222.0,
+      "name": "Darkburst",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 225.0,
+      "name": "Exocleaver (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 231.0,
+      "end": 237.0,
+      "name": "Synergy",
+      "damageType": "Physical/Magical",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 245.0,
+      "end": 250.0,
+      "name": "Hemitheos's Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 257.0,
+      "end": 260.0,
+      "name": "Aetherial Exchange",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 262.0,
+      "end": 266.0,
+      "name": "Polyominoid Sigma",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 269.0,
+      "end": 274.0,
+      "name": "Unholy Darkness (Indicator)",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 280.0,
+      "name": "Polyominous Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 280.0,
+      "name": "Unholy Darkness (Action)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 288.0,
+      "end": 292.0,
+      "name": "Dark Ashes (Indicator)",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 295.0,
+      "end": 300.0,
+      "name": "Choros Ixou (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 300.0,
+      "name": "Dark Ashes (Action)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 303.0,
+      "name": "Choros Ixou (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 312.0,
+      "end": 315.0,
+      "name": "Cachexia",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 324.0,
+      "name": "Aetheronecrosis (1/2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 328.0,
+      "name": "Aetheronecrosis (3/4)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 332.0,
+      "name": "Aetheronecrosis (5/6)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 326.0,
+      "end": 332.0,
+      "name": "Dual Predation",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 333.0,
+      "name": "Glossal/Chelic Predation (1)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 336.0,
+      "name": "Aetheronecrosis (7/8)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 337.0,
+      "name": "Glossal/Chelic Predation (2)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 341.0,
+      "name": "Glossal/Chelic Predation (3)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 345.0,
+      "name": "Glossal/Chelic Predation (4)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 349.0,
+      "end": 355.0,
+      "name": "Ptera Ixou",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 363.0,
+      "end": 370.0,
+      "name": "Chelic Synergy",
+      "damageType": "Physical",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 377.0,
+      "end": 382.0,
+      "name": "Hemitheos's Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 389.0,
+      "end": 393.0,
+      "name": "Aetheric Polyominoid",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 395.0,
+      "end": 399.0,
+      "name": "Dark Sphere (Indicator)",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 401.0,
+      "end": 405.0,
+      "name": "Dark Dome (Indicator)",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 406.0,
+      "name": "Dark Sphere (Action)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 406.0,
+      "name": "Polyominous Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 410.0,
+      "name": "Dark Dome (Action)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 418.0,
+      "end": 421.0,
+      "name": "Aetherial Exchange",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 423.0,
+      "end": 427.0,
+      "name": "Exchange of Agonies",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 430.0,
+      "end": 435.0,
+      "name": "Choros Ixou (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 435.0,
+      "name": "Darkburst",
+      "damageType": "Magic ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 435.0,
+      "name": "Dark Perimeter",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 435.0,
+      "name": "Unholy Darkness",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 438.0,
+      "name": "Choros Ixou (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 444.0,
+      "end": 447.0,
+      "name": "Aetherial Exchange",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 450.0,
+      "end": 454.0,
+      "name": "Polyominoid Sigma",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 461.0,
+      "end": 466.0,
+      "name": "Choros Ixou (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 467.0,
+      "name": "Polyominous Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 470.0,
+      "name": "Choros Ixou (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 476.0,
+      "end": 483.0,
+      "name": "Chelic Synergy/Synergy",
+      "damageType": "Physical (& Magic if 'Synergy')",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 490.0,
+      "end": 495.0,
+      "name": "Hemitheos's Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 504.0,
+      "end": 507.0,
+      "name": "Cachexia",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 510.0,
+      "end": 515.0,
+      "name": "Transmission",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 520.0,
+      "end": 523.0,
+      "name": "Aetherial Exchange",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 525.0,
+      "end": 529.0,
+      "name": "Polyominoid Sigma",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 537.0,
+      "end": 543.0,
+      "name": "Ptera Ixou",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 543.0,
+      "name": "Dark Sphere",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 543.0,
+      "name": "Unholy Darkness (Action)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 544.0,
+      "name": "Chelic Claw/Reek Havoc",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 552.0,
+      "end": 556.0,
+      "name": "Aetheric Polyominoid",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 561.0,
+      "end": 565.0,
+      "name": "Dark Dome (Indicator)",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 569.0,
+      "name": "Polyominous Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 569.0,
+      "name": "Dark Dome (Action)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 577.0,
+      "end": 581.0,
+      "name": "Aetheric Polyominoid",
+      "damageType": "Non-Damaging ",
+      "actor": "Boss"
+    },
+    {
+      "start": 586.0,
+      "end": 591.0,
+      "name": "Choros Ixou (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 591.0,
+      "name": "Polyominous Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 594.0,
+      "name": "Choros Ixou (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 600.0,
+      "end": 607.0,
+      "name": "Chelic Synergy/Synergy",
+      "damageType": "Physical (& Magic if 'Synergy')",
+      "actor": "Boss",
+      "type":  "tb"
+    },
+    {
+      "start": 614.0,
+      "end": 619.0,
+      "name": "Hemitheos's Dark IV",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 629.0,
+      "end": 639.0,
+      "name": "Hemitheos's Dark IV",
+      "damageType": "Death",
+      "actor": "Boss",
+      "type": "enrage"
+    }
+  ]
+}

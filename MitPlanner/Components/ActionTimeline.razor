@@ -1,0 +1,123 @@
+﻿@using AntDesign;
+@using MitPlanner.Model
+@using MitPlanner.Services
+
+@inject ActionTimelineService ActionTimelineService
+@inject JobActionService JobActionService
+
+@if (model != null)
+{
+    <CascadingValue Value="@dragContext">
+        <div class="header-container">
+            <ActionSelector Actor="@selectedActor"
+                Timeline="@model"
+                TimelineItem="@selectedItem"
+                ActionClick="HandleSelectorActionClick" />
+            <ActionTimelineHeader Actors="@model.Actors"
+                SelectedActor="@selectedActor"
+                ActorClick="HandleActorClick" />
+        </div>
+        <div>
+            @foreach (var item in @model.Items)
+            {
+                <ActionTimelineItem Model="@item"
+                    IsSelected="@(item == selectedItem)"
+                    Click="() => HandleItemClick(item)"
+                    ActionDrop="a => HandleItemActionDrop(item, a)"
+                    ActionClick="a => HandleItemActionClick(item, a) "/>
+            }
+        </div>
+    </CascadingValue>
+}
+else
+{
+    <AntDesign.Text Type="danger">Unknown encounter</AntDesign.Text>
+}
+
+@code
+{
+    private readonly DragContext dragContext = new();
+
+    private ActionTimelineItemModel? selectedItem;
+
+    private ActorModel? selectedActor;
+
+    private ActionTimelineModel? model;
+
+    [Parameter]
+    public string EncounterName { get; set; } = "";
+
+    protected override void OnInitialized()
+    {
+        if (string.IsNullOrEmpty(EncounterName))
+            return;
+
+        model = ActionTimelineService.GetEncounterTimeline(EncounterName);
+        selectedItem = model?.Items?.FirstOrDefault();
+        selectedActor = model?.Actors?.FirstOrDefault();
+    }
+
+    private void HandleItemClick(ActionTimelineItemModel item)
+    {
+        selectedItem = item;
+    }
+
+    private async Task HandleItemActionClick(ActionTimelineItemModel item, ActorAction action)
+    {
+        var added = await ActionTimelineService.RemoveAction(model, item.Id, action.ActorId, action.ActionName);
+        if (added)
+        {
+            StateHasChanged();
+        }
+    }
+
+    private async Task HandleItemActionDrop(ActionTimelineItemModel item, ActorAction action)
+    {
+        var removed = await ActionTimelineService.AddAction(model, item.Id, action.ActorId, action.ActionName);
+        if (removed)
+        {
+            StateHasChanged();
+        }
+    }
+
+    private async Task HandleSelectorActionClick(ActorAction action)
+    {
+        if (selectedItem == null)
+            return;
+
+        var actor = selectedItem.Actions.FirstOrDefault(a => a.ActorId == action.ActorId);
+        if (actor == null)
+            return;
+
+        if (actor.Actions.Any(a => a.Name == action.ActionName))
+        {
+            await ActionTimelineService.RemoveAction(model, selectedItem.Id, actor.ActorId, action.ActionName);
+        }
+        else
+        {
+            await ActionTimelineService.AddAction(model, selectedItem.Id, actor.ActorId, action.ActionName);
+        }
+
+        StateHasChanged();
+    }
+
+    private void HandleActorClick(ActorModel actor)
+    {
+        selectedActor = actor;
+    }
+}
+
+<style>
+
+    .header-container {
+        position: sticky;
+        top: 0;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f0f2f5; /* match AntLayout background */
+        z-index: 100;
+    }
+
+</style>

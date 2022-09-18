@@ -1,0 +1,1146 @@
+{
+  "encounterName": "p8s1",
+  "timeline": [
+    {
+      "start": 0.0,
+      "end": 0.0,
+      "name": "Pull",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 7.0,
+      "end": 12.0,
+      "name": "Genesis of Flame",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 15.0,
+      "end": 18.0,
+      "name": "Conceptual Tetraflare/Octaflare",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 21.0,
+      "end": 24.0,
+      "name": "Volcanic Torches",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 38.0,
+      "name": "Torch Flame",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 32.0,
+      "end": 40.0,
+      "name": "Sunforge [Scorching Fang/Sun's Pinion]",
+      "damageType": "Non-Damaging [Magic/Magic]",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 41.0,
+      "name": "Emergent Tetrafrlare/Octaflare",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 42.0,
+      "end": 48.0,
+      "name": "Flameviper (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 51.0,
+      "name": "Flameviper (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 60.0,
+      "end": 63.0,
+      "name": "Reforged Reflection",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": null,
+      "name": "Ultima Weapon (Dog) Timeline below [Collapsable]",
+      "damageType": null,
+      "actor": null
+    },
+    {
+      "start": null,
+      "end": 70.0,
+      "name": "Footprint",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 71.0,
+      "end": 77.0,
+      "name": "Rearing Rampage/Uplift (1)",
+      "damageType": "Physical/Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 79.0,
+      "name": "Rearing Rampage/Uplift (2)",
+      "damageType": "Physical/Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 81.0,
+      "name": "Rearing Rampage/Uplift (3)",
+      "damageType": "Physical/Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 83.0,
+      "name": "Rearing Rampage/Uplift (4)",
+      "damageType": "Physical/Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 84.0,
+      "end": 89.0,
+      "name": "Stomp Dead (1)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 92.0,
+      "name": "Stomp Dead (2)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 94.0,
+      "name": "Stomp Dead (3)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 156.0,
+      "name": "Stomp Dead (4)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 111.0,
+      "end": 114.0,
+      "name": "Illusory Creation",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 117.0,
+      "end": 120.0,
+      "name": "Creation on Command",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 123.0,
+      "end": 128.0,
+      "name": "Manifold Flames",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 121.0,
+      "end": 129.0,
+      "name": "Sunforge [Scorching Fang/Sun's Pinion]",
+      "damageType": "Non-Damaging [Magic/Magic]",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 129.0,
+      "name": "Hemitheos's Flare",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 133.0,
+      "name": "Nest of Flamevipers",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 135.0,
+      "end": 140.0,
+      "name": "Tetraflare",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 133.0,
+      "end": 141.0,
+      "name": "Sunforge [Scorching Fang/Sun's Pinion]",
+      "damageType": "Non-Damaging [Magic/Magic]",
+      "actor": "Boss"
+    },
+    {
+      "start": 135.0,
+      "end": 141.0,
+      "name": "Nest of Flamevipers",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 141.0,
+      "name": "Emerging Tetrafalre",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 153.0,
+      "name": "Torch Flame",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 153.0,
+      "end": 157.0,
+      "name": "Genesis of Flame",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 167.0,
+      "end": 170.0,
+      "name": "Reforged Reflection",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 177.0,
+      "name": "Snaking Kick",
+      "damageType": "Phyiscal",
+      "actor": "Boss"
+    },
+    {
+      "start": 180.0,
+      "end": 183.0,
+      "name": "Gorgomanteia",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 186.0,
+      "end": 189.0,
+      "name": "Into the Shadows",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 195.0,
+      "end": 203.0,
+      "name": "Petrification (1)",
+      "damageType": "Non-Damaging",
+      "actor": "External Actor"
+    },
+    {
+      "start": 206.0,
+      "end": null,
+      "name": "Gorgoneion (1)",
+      "damageType": "???",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 207.0,
+      "name": "Eye of the Gorgon (1)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 210.0,
+      "name": "Blood of the Gorgon (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 203.0,
+      "end": 211.0,
+      "name": "Petrification (2)",
+      "damageType": "Non-Damaging",
+      "actor": "External Actor"
+    },
+    {
+      "start": 214.0,
+      "end": null,
+      "name": "Gorgoneion (2)",
+      "damageType": "???",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 215.0,
+      "name": "Eye of the Gorgon (2)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 218.0,
+      "name": "Blood of the Gorgon (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 222.0,
+      "end": 227.0,
+      "name": "Ektothermos",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 243.0,
+      "end": 246.0,
+      "name": "Conceptual Tetraflare/Octaflare [Stored]",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 249.0,
+      "end": 252.0,
+      "name": "Fourfold Fires",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 253.0,
+      "end": 258.0,
+      "name": "Abyssal Fires",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 258.0,
+      "end": 261.0,
+      "name": "Cthonic Vent",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": null,
+      "name": "Vent 1 Resolves",
+      "damageType": "???",
+      "actor": "???"
+    },
+    {
+      "start": null,
+      "end": null,
+      "name": "Vent 2 Resolves",
+      "damageType": "???",
+      "actor": "???"
+    },
+    {
+      "start": 272.0,
+      "end": 277.0,
+      "name": "Tetraflare/Octaflare",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 277.0,
+      "name": "Emergent Tetraflare/Octaflare",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": null,
+      "name": "Vent 3 Resolves",
+      "damageType": "???",
+      "actor": "???"
+    },
+    {
+      "start": 283.0,
+      "end": 291.0,
+      "name": "Sunforge [Scorching Fang/Sun's Pinion]",
+      "damageType": "Non-Damaging [Magic/Magic]",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 291.0,
+      "name": "Emergent Tetraflare/Octaflare [Stored]",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 293.0,
+      "end": 298.0,
+      "name": "Flameviper (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 301.0,
+      "name": "Flameviper (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 311.0,
+      "end": 314.0,
+      "name": "Reforged Reflection",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 320.0,
+      "name": "Footprint",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 321.0,
+      "end": 326.0,
+      "name": "Quadrupedal Crush/Impact",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 330.0,
+      "end": 333.0,
+      "name": "Conceptual Tetraflare/Diflare",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 336.0,
+      "end": 348.0,
+      "name": "Blazing Footfalls (Indicator)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 349.0,
+      "name": "Trailblaze  (1)",
+      "damageType": "???",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 350.0,
+      "name": "Emergent Tetraflare/Diflare",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 354.0,
+      "name": "Quadrupedal Crush/Impact",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 357.0,
+      "name": "Trailblaze (2)",
+      "damageType": "???",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 359.0,
+      "name": "Quadrupedal Crush/Impact",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 363.0,
+      "name": "Torch Flame",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 372.0,
+      "end": 377.0,
+      "name": "Flameviper (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 380.0,
+      "name": "Flameviper (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 390.0,
+      "end": 393.0,
+      "name": "Reforged Reflection",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 400.0,
+      "name": "Snaking Kick",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 403.0,
+      "end": 406.0,
+      "name": "Gorgomanteia",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 409.0,
+      "end": 412.0,
+      "name": "Into the Shadows",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 418.0,
+      "end": 427.0,
+      "name": "Petrification (1)",
+      "damageType": "Non-Damaging",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 427.0,
+      "name": "Gorgospit (1)",
+      "damageType": "???",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 427.0,
+      "name": "Eye of the Gorgon (1)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 429.0,
+      "end": 432.0,
+      "name": "Gorgoneion",
+      "damageType": "???",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 430.0,
+      "name": "Blood of the Gorgon (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 431.0,
+      "end": 434.0,
+      "name": "Illusory Creation",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 436.0,
+      "name": "Eye of the Gorgon (2)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 436.0,
+      "name": "Blood of the Gorgon (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 445.0,
+      "name": "Gorgospit (2)",
+      "damageType": "???",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 445.0,
+      "name": "Crown of the Gorgon",
+      "damageType": "???",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 446.0,
+      "name": "Breath of the Gorgon",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": null,
+      "name": "Byakko (Snake) Timeline below [Collapsable]",
+      "damageType": null,
+      "actor": null
+    },
+    {
+      "start": null,
+      "end": 70.0,
+      "name": "Snaking Kick",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 74.0,
+      "end": 77.0,
+      "name": "Gorgomanteia",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 80.0,
+      "end": 83.0,
+      "name": "Into the Shadows",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 89.0,
+      "end": 97.0,
+      "name": "Petrification (1)",
+      "damageType": "Non-Damaging",
+      "actor": "External Actor"
+    },
+    {
+      "start": 100.0,
+      "end": null,
+      "name": "Gorgoneion (1)",
+      "damageType": "???",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 100.0,
+      "name": "Eye of the Gorgon (1)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 103.0,
+      "name": "Blood of the Gorgon (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 105.0,
+      "name": "Petrification (2)",
+      "damageType": "Non-Damaging",
+      "actor": "External Actor"
+    },
+    {
+      "start": 108.0,
+      "end": null,
+      "name": "Gorgoneion (2)",
+      "damageType": "???",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 108.0,
+      "name": "Eye of the Gorgon (2)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 111.0,
+      "name": "Blood of the Gorgon (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 116.0,
+      "end": 121.0,
+      "name": "Ektothermos",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 136.0,
+      "end": 139.0,
+      "name": "Illusiory Creation",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 143.0,
+      "end": 146.0,
+      "name": "Creation on Command",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 146.0,
+      "end": 154.0,
+      "name": "Sunforge [Scorching Fang/Sun's Pinion]",
+      "damageType": "Non-Damaging [Magic/Magic]",
+      "actor": "Boss"
+    },
+    {
+      "start": 149.0,
+      "end": 154.0,
+      "name": "Manifold Flames",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 155.0,
+      "name": "Hemitheos's Flare",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 150.0,
+      "name": "Nest of Flamevipers",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 161.0,
+      "end": 166.0,
+      "name": "Tetraflare",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 158.0,
+      "end": 166.0,
+      "name": "Sunforge [Scorching Fang/Sun's Pinion]",
+      "damageType": "Non-Damaging [Magic/Magic]",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 167.0,
+      "name": "Emergent Tetraflare",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 179.0,
+      "name": "Torch Flame",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 178.0,
+      "end": 183.0,
+      "name": "Genesis of Flame",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 193.0,
+      "end": 196.0,
+      "name": "Reforged Reflection",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 202.0,
+      "name": "Footprint",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 203.0,
+      "end": 208.0,
+      "name": "Rearing Rampage/Uplift (1)",
+      "damageType": "Physical/Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 210.0,
+      "name": "Rearing Rampage/Uplift (2)",
+      "damageType": "Physical/Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 212.0,
+      "name": "Rearing Rampage/Uplift (3)",
+      "damageType": "Physical/Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 214.0,
+      "name": "Rearing Rampage/Uplift (4)",
+      "damageType": "Physical/Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 217.0,
+      "end": 222.0,
+      "name": "Stomp Dead (1)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 224.0,
+      "name": "Stomp Dead (2)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 226.0,
+      "name": "Stomp Dead (3)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 229.0,
+      "name": "Stomp Dead (4)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 243.0,
+      "end": 246.0,
+      "name": "Conceptual Tetraflare/Octaflare [Stored]",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 249.0,
+      "end": 252.0,
+      "name": "Fourfold Fires",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 253.0,
+      "end": 258.0,
+      "name": "Abyssal Fires",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 258.0,
+      "end": 261.0,
+      "name": "Cthonic Vent",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": null,
+      "name": "Vent 1 Resolves",
+      "damageType": "???",
+      "actor": "???"
+    },
+    {
+      "start": null,
+      "end": null,
+      "name": "Vent 2 Resolves",
+      "damageType": "???",
+      "actor": "???"
+    },
+    {
+      "start": 272.0,
+      "end": 277.0,
+      "name": "Tetraflare/Octaflare",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 277.0,
+      "name": "Emergent Tetraflare/Octaflare",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": null,
+      "name": "Vent 3 Resolves",
+      "damageType": "???",
+      "actor": "???"
+    },
+    {
+      "start": 283.0,
+      "end": 291.0,
+      "name": "Sunforge [Scorching Fang/Sun's Pinion]",
+      "damageType": "Non-Damaging [Magic/Magic]",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 291.0,
+      "name": "Emergent Tetraflare/Octaflare",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 293.0,
+      "end": 358.0,
+      "name": "Flameviper (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 301.0,
+      "name": "Flameviper (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 311.0,
+      "end": 314.0,
+      "name": "Reforged Reflection",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 321.0,
+      "name": "Snaking Kick",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 324.0,
+      "end": 327.0,
+      "name": "Gorgomanteia",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 330.0,
+      "end": 333.0,
+      "name": "Into the Shadows",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 339.0,
+      "end": 347.0,
+      "name": "Petrification (1)",
+      "damageType": "Non-Damaging",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 347.0,
+      "name": "Gorgospit (1)",
+      "damageType": "???",
+      "actor": "Boss"
+    },
+    {
+      "start": 351.0,
+      "end": 354.0,
+      "name": "Gorgoneion (1)",
+      "damageType": "???",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 351.0,
+      "name": "Blood of the Gorgon (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 351.0,
+      "name": "Eye of the Gorgon (1)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 353.0,
+      "end": 356.0,
+      "name": "Illusory Creation",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 357.0,
+      "name": "Blood of the Gorgon (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 357.0,
+      "name": "Eye of the Gorgon (2)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 366.0,
+      "name": "Gorgospit (2)",
+      "damageType": "???",
+      "actor": " Boss"
+    },
+    {
+      "start": null,
+      "end": 366.0,
+      "name": "Crown of the Gorgon",
+      "damageType": "???",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 367.0,
+      "name": "Breath of the Gorgon",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 375.0,
+      "end": 380.0,
+      "name": "Flameviper (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 384.0,
+      "name": "Flameviper (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 393.0,
+      "end": 396.0,
+      "name": "Reforged Reflection",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 403.0,
+      "name": "Footprint",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 404.0,
+      "end": 410.0,
+      "name": "Quadrupedal Crush/Impact",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 412.0,
+      "end": 415.0,
+      "name": "Conceptual Tetraflare/Diflare",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 418.0,
+      "end": 430.0,
+      "name": "Blazing Footfalls (Indicator)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 431.0,
+      "name": "Trailblaze (1)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 432.0,
+      "name": "Emergent Tetraflare/Diflare",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 435.0,
+      "name": "Quadrupedal Crush/Impact",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 440.0,
+      "name": "Trailblaze (2)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 442.0,
+      "name": "Quadrupedal Crush/Impact",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 446.0,
+      "name": "Torch Flame",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 454.0,
+      "end": 459.0,
+      "name": "Genesis of Flame",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 467.0,
+      "end": 472.0,
+      "name": "Genesis of Flame",
+      "damageType": "Death",
+      "actor": "Boss"
+    }
+  ]
+}

@@ -1,0 +1,659 @@
+{
+  "encounterName": "p5s",
+  "timeline": [
+    {
+      "start": 0.0,
+      "end": 0.0,
+      "name": "Pull",
+      "damageType": "Physical ",
+      "actor": "Boss"
+    },
+    {
+      "start": 10.0,
+      "end": 15.0,
+      "name": "Sonic Howl",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 17.0,
+      "end": 22.0,
+      "name": "Ruby Glow",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 25.0,
+      "end": 29.0,
+      "name": "Topaz Stones",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 30.0,
+      "end": 44.0,
+      "name": "Topaz Ray/Ruby Reflection",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 51.0,
+      "end": 57.0,
+      "name": "Venomous Mass",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 58.0,
+      "end": 64.0,
+      "name": "Toxic Crunch",
+      "damageType": "Physical ",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": null,
+      "end": 85.0,
+      "name": "Titania Toxic Puddles Resolve",
+      "damageType": "Magic (Assumed)",
+      "actor": "Environment"
+    },
+    {
+      "start": 89.0,
+      "end": 95.0,
+      "name": "Venomous Mass",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 96.0,
+      "end": 101.0,
+      "name": "Toxic Crunch",
+      "damageType": "Physical ",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 110.0,
+      "end": 115.0,
+      "name": "Ruby Glow",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 119.0,
+      "end": 122.0,
+      "name": "Topaz Stones",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 127.0,
+      "end": 133.0,
+      "name": "Double Rush (1)",
+      "damageType": "Physical ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 135.0,
+      "name": "Double Rush (2)",
+      "damageType": "Physical ",
+      "actor": "Boss"
+    },
+    {
+      "start": 124.0,
+      "end": 137.0,
+      "name": "Topaz Ray/Ruby Reflection",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 141.0,
+      "end": 146.0,
+      "name": "Sonic Howl",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 154.0,
+      "end": 159.0,
+      "name": "Ruby Glow",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 161.0,
+      "end": 165.0,
+      "name": "Topaz Cluster",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 167.0,
+      "end": 176.0,
+      "name": "Topaz Ray/Ruby Reflection (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 169.0,
+      "end": 178.0,
+      "name": "Topaz Ray/Ruby Reflection (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 172.0,
+      "end": 181.0,
+      "name": "Topaz Ray/Ruby Reflection (3)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 174.0,
+      "end": 183.0,
+      "name": "Topaz Ray/Ruby Reflection (4)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 187.0,
+      "end": 193.0,
+      "name": "Venomous Mass",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 195.0,
+      "end": 200.0,
+      "name": "Toxic Crunch",
+      "damageType": "Physical ",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 206.0,
+      "end": 211.0,
+      "name": "Venom Surge/Squall",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 215.0,
+      "name": "Venom Rain/Pool",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 218.0,
+      "end": 221.0,
+      "name": "Venom Drops",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 224.0,
+      "name": "Venom Rain/Pool",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 226.0,
+      "end": 232.0,
+      "name": "Claw to Tail/Tail to Claw",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 232.0,
+      "name": "Raging Tail [TtC]",
+      "damageType": "Physical ",
+      "actor": "Boss"
+    },
+    {
+      "start": 233.0,
+      "end": 235.0,
+      "name": "Raging Claw [CtT]",
+      "damageType": "Physical ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 236.0,
+      "name": "Raging Tail [CtT]",
+      "damageType": "Physical ",
+      "actor": "Boss"
+    },
+    {
+      "start": 234.0,
+      "end": 236.0,
+      "name": "Raging Claw [TtC]",
+      "damageType": "Physical ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": null,
+      "name": "Starving Stampede [Indicator]",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 255.0,
+      "end": 266.0,
+      "name": "Starving Stampede [Action]",
+      "damageType": "Physical ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 269.0,
+      "name": "Titania Toxic Puddles Resolve",
+      "damageType": "Magic (Assumed)",
+      "actor": "Environment"
+    },
+    {
+      "start": null,
+      "end": 272.0,
+      "name": "Devour",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 280.0,
+      "end": 285.0,
+      "name": "Sonic Howl",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 288.0,
+      "end": 292.0,
+      "name": "Ruby Glow",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 295.0,
+      "end": 299.0,
+      "name": "Topaz Stones",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 301.0,
+      "end": 306.0,
+      "name": "Venom Pool (Cast)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 309.0,
+      "name": "Venom Pool (Action)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 300.0,
+      "end": 312.0,
+      "name": "Topaz Ray/Ruby Reflection",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 313.0,
+      "end": 318.0,
+      "name": "Raging Claw/Searing Ray",
+      "damageType": "Physical|Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 327.0,
+      "end": 333.0,
+      "name": "Venomous Mass",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 334.0,
+      "end": 339.0,
+      "name": "Toxic Crunch",
+      "damageType": "Physical",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 347.0,
+      "end": 352.0,
+      "name": "Ruby Glow",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 356.0,
+      "end": 360.0,
+      "name": "Topaz Stones",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 361.0,
+      "end": 374.0,
+      "name": "Topaz Ray/Ruby Reflection",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 369.0,
+      "end": 374.0,
+      "name": "Venom Surge/Squall",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 378.0,
+      "name": "Venom Rain/Pool",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 381.0,
+      "end": 384.0,
+      "name": "Venom Drops",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 387.0,
+      "name": "Venom Rain/Pool",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 398.0,
+      "name": "Titania Toxic Puddles Resolve",
+      "damageType": "Magic (Assumed)",
+      "actor": "Environment"
+    },
+    {
+      "start": 399.0,
+      "end": 404.0,
+      "name": "Claw to Tail/Tail to Claw",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 405.0,
+      "name": "Raging Tail [TtC]",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 405.0,
+      "end": 407.0,
+      "name": "Raging Claw [CtT]",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 409.0,
+      "name": "Raging Tail [CtT]",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 407.0,
+      "end": 409.0,
+      "name": "Raging Claw [TtC]",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 412.0,
+      "end": 418.0,
+      "name": "Venomous Mass",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 419.0,
+      "end": 424.0,
+      "name": "Toxic Crunch",
+      "damageType": "Physical",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 430.0,
+      "end": 435.0,
+      "name": "Sonic Howl",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 438.0,
+      "end": 443.0,
+      "name": "Ruby Glow",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 445.0,
+      "end": 449.0,
+      "name": "Topaz Stones",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 451.0,
+      "end": 456.0,
+      "name": "Venom Pool (Cast)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 460.0,
+      "name": "Venom Pool (Action)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 450.0,
+      "end": 463.0,
+      "name": "Topaz Ray/Ruby Reflection",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 467.0,
+      "end": 473.0,
+      "name": "Double Rush (1)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 475.0,
+      "name": "Double Rush (2)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 478.0,
+      "end": 483.0,
+      "name": "Venomous Mass",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 485.0,
+      "end": 490.0,
+      "name": "Toxic Crunch",
+      "damageType": "Physical",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 499.0,
+      "end": 504.0,
+      "name": "Sonic Howl",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 507.0,
+      "end": 512.0,
+      "name": "Venom Surge/Squall",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 516.0,
+      "name": "Venom Rain/Pool",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 519.0,
+      "end": 522.0,
+      "name": "Venom Drops",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 525.0,
+      "name": "Venom Rain/Pool",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 525.0,
+      "end": 531.0,
+      "name": "Claw to Tail/Tail to Claw",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 531.0,
+      "name": "Raging Tail [TtC]",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 531.0,
+      "end": 533.0,
+      "name": "Raging Claw [CtT]",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 535.0,
+      "name": "Raging Tail [CtT]",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 533.0,
+      "end": 535.0,
+      "name": "Raging Claw [TtC]",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 539.0,
+      "end": 545.0,
+      "name": "Venomous Mass",
+      "damageType": "Physical",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 546.0,
+      "end": 551.0,
+      "name": "Toxic Crunch",
+      "damageType": "Physical",
+      "actor": "Boss",
+      "type": "tb"
+    },
+    {
+      "start": 561.0,
+      "end": 566.0,
+      "name": "Sonic Shatter (1)",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": null,
+      "end": 569.0,
+      "name": "Sonic Shatter (2)",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": null,
+      "end": 572.0,
+      "name": "Sonic Shatter (3)",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": null,
+      "end": 575.0,
+      "name": "Sonic Shatter (4)",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": null,
+      "end": 578.0,
+      "name": "Sonic Shatter (5)",
+      "damageType": "Magic",
+      "actor": "Boss",
+      "type": "raidwide"
+    },
+    {
+      "start": 593.0,
+      "end": 598.0,
+      "name": "Acidic Slaver",
+      "damageType": "Death",
+      "actor": "Boss",
+      "type": "enrage"
+    }
+  ]
+}

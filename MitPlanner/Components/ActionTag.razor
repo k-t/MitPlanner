@@ -1,0 +1,57 @@
+﻿@using AntDesign;
+@using MitPlanner.Model
+@using MitPlanner.Utilities;
+
+<div class="action-tag @StateClass" title="@Tooltip"
+    @onclick="HandleClick"
+    draggable="true"
+    @ondragstart="HandleDragStart"
+    @ondragend="HandleDragEnd">
+    <img src="@Helpers.GetActionImageUrl(Action.Name)" alt="@Action.Title" draggable="false" />
+    <span>@Action.Title<span class="action-tag-recast">&nbsp;@(Action.Recast.TotalSeconds)s</span></span>
+</div>
+
+@code
+{
+    [Parameter]
+    public ActionModel Action { get; set; }
+
+    [Parameter]
+    public ActionSelectionState State { get; set; }
+
+    [Parameter]
+    public EventCallback<ActionModel> Click { get; set; }
+
+    [Parameter]
+    public EventCallback<ActionModel> DragStart { get; set; }
+
+    [Parameter]
+    public EventCallback DragEnd { get; set; }
+
+    string StateClass => State switch
+    {
+        ActionSelectionState.Selected => "action-tag-selected",
+        ActionSelectionState.Unavailable => "action-tag-unavailable",
+        _ => ""
+    };
+
+    string Tooltip
+    {
+        get { return Action.Name; }
+    }
+
+    private async Task HandleClick()
+    {
+        await Click.InvokeAsync(Action);
+    }
+
+    private async Task HandleDragStart()
+    {
+        await DragStart.InvokeAsync(Action);
+    }
+
+    private async Task HandleDragEnd()
+    {
+        await DragEnd.InvokeAsync();
+    }
+}

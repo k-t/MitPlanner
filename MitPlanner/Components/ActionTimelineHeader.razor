@@ -1,0 +1,32 @@
+﻿@using AntDesign
+@using MitPlanner.Model
+@using MitPlanner.Utilities;
+
+<div class="tl-header">
+    <div class="tl-time-col"></div>
+    <div class="tl-name-col"></div>
+    @foreach (var actor in Actors)
+    {
+        <div class="tl-header-col @(actor == SelectedActor ? "tl-selected" : "")" title="@actor.JobTitle"
+             @onclick="@(() => HandleActorClick(actor))">
+            <img src="@Helpers.GetJobImageUrl(actor.JobId)" alt="@actor.JobTitle" />
+        </div>
+    }
+</div>
+
+@code
+{
+    [Parameter]
+    public IReadOnlyCollection<ActorModel> Actors { get; set; } = Array.Empty<ActorModel>();
+
+    [Parameter]
+    public ActorModel? SelectedActor { get; set; }
+
+    [Parameter]
+    public EventCallback<ActorModel> ActorClick { get; set; }
+
+    private async Task HandleActorClick(ActorModel actor)
+    {
+        await ActorClick.InvokeAsync(actor);
+    }
+}

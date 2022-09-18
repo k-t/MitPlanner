@@ -1,0 +1,130 @@
+﻿@using AntDesign
+@using MitPlanner.Model
+@using MitPlanner.Services
+@using MitPlanner.Utilities
+
+@inject ActionTimelineService ActionTimelineService
+@inject JobActionService JobActionService
+
+<div class="action-selector">
+    <div class="tl-title">@Actor?.JobTitle</div>
+    <div class="action-tag-container">
+        @foreach (var action in actions) {
+            <ActionTag Action="@action"
+                State="GetActionState(action)"
+                Click="HandleActionClick"
+                DragStart="HandleActionDragStart"
+                DragEnd="HandleActionDragEnd" />
+        }
+    </div>
+</div>
+
+@code
+{
+    [CascadingParameter]
+    protected DragContext? DragContext { get; set; }
+
+    [Parameter]
+    public ActorModel? Actor { get; set; }
+
+    [Parameter]
+    public ActionTimelineModel? Timeline { get; set; }
+
+    [Parameter]
+    public ActionTimelineItemModel? TimelineItem { get; set; }
+
+    [Parameter]
+    public EventCallback<ActorAction> ActionClick { get; set; }
+
+    private IReadOnlyCollection<ActionModel> actions = Array.Empty<ActionModel>();
+
+    protected override void OnParametersSet()
+    {
+        if (Actor != null)
+        {
+            actions = JobActionService.GetAllActions(Actor.JobId);
+        }
+        else
+        {
+            actions = Array.Empty<ActionModel>();
+        }
+    }
+
+    private ActionSelectionState GetActionState(ActionModel action)
+    {
+        if (TimelineItem == null || Actor == null)
+            return ActionSelectionState.Default;
+
+        var actor = TimelineItem.Actions.FirstOrDefault(a => a.ActorId == Actor.ActorId);
+        if (actor == null)
+            return ActionSelectionState.Default;
+
+        if (actor.Actions.Any(a => a.Name == action.Name))
+            return ActionSelectionState.Selected;
+
+        // TODO: fix this mess
+        if (Timeline != null)
+        {
+            ActionTimelineItemModel lastActionUsage = null;
+
+            foreach (var item in Timeline.Items)
+            {
+                if (item.Actions.Any(a => a.ActorId == actor.ActorId && a.Actions.Any(x => x.Name == action.Name)))
+                {
+                    lastActionUsage = item;
+                }
+
+                if (item == TimelineItem)
+                    break;
+            }
+
+            if (lastActionUsage != null)
+            {
+                var lastTime = lastActionUsage.Timeline.End ?? lastActionUsage.Timeline.Start;
+                var time = TimelineItem.Timeline.End ?? TimelineItem.Timeline.Start;
+
+                if (time.HasValue && lastTime.HasValue)
+                {
+                    if (lastTime.Value.Add(action.Recast) > time)
+                        return ActionSelectionState.Unavailable;
+                }
+            }
+        }
+
+        return ActionSelectionState.Default;
+    }
+
+    private async Task HandleActionClick(ActionModel action)
+    {
+        if (Actor == null)
+            return;
+
+        await ActionClick.InvokeAsync(
+            new ActorAction
+            {
+                ActorId = Actor.ActorId,
+                ActionName = action.Name
+            }
+        );
+    }
+
+    private void HandleActionDragStart(ActionModel action)
+    {
+        if (DragContext == null || Actor == null)
+            return;
+
+        DragContext.Data = new ActorAction
+        {
+            ActorId = Actor.ActorId,
+            ActionName = action.Name
+        };
+    }
+
+    private void HandleActionDragEnd()
+    {
+        if (DragContext == null)
+            return;
+
+        DragContext.Data = null;
+    }
+}

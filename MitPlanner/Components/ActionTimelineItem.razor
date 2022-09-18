@@ -1,0 +1,114 @@
+﻿@using AntDesign
+@using MitPlanner.Data.Model
+@using MitPlanner.Model
+@using MitPlanner.Services;
+@using MitPlanner.Utilities;
+
+@inject IJSRuntime JS
+
+@if (Model != null)
+{
+    <div class="tl-item @(IsSelected ? "tl-selected" : "")" @ondrop="HandleDrop" @onclick="HandleClick">
+        <div class="tl-time-col">
+            <span>@FormatTimeSpan(Model.Timeline.Start)</span>
+            <span>@FormatTimeSpan(Model.Timeline.End)</span>
+        </div>
+        <div class="tl-name-col">
+            <div class="tl-title" title="@TitleTooltip">
+                <Text Type="@TitleType">@Model.Timeline.Name</Text>
+            </div>
+            <Tag class="tl-tag" Color="@GetDamageTypeColor(Model.Timeline.DamageType)">@Model.Timeline.DamageType</Tag>
+            <Tag class="tl-tag" Color="default">@Model.Timeline.Actor</Tag>
+        </div>
+        @foreach (var actor in Model.Actions)
+        {
+            <div class="tl-action-col">
+                <ActionList Actions="actor.Actions" ActionClick="action => HandleActionClick(actor.ActorId, action)" />
+            </div>
+        }
+    </div>
+}
+
+@code
+{
+    [CascadingParameter]
+    protected DragContext? DragContext { get; set; }
+
+    [Parameter]
+    public bool IsSelected { get; set; }
+
+    [Parameter]
+    public ActionTimelineItemModel? Model { get; set; }
+
+    [Parameter]
+    public EventCallback Click { get; set; }
+
+    [Parameter]
+    public EventCallback<ActorAction> ActionClick { get; set; }
+
+    [Parameter]
+    public EventCallback<ActorAction> ActionDrop { get; set; }
+
+    string TitleType => Model?.Timeline.Type switch
+    {
+        TimelineNodeType.Raidwide => "danger",
+        TimelineNodeType.Tankbuster => "warning",
+        _ => ""
+    };
+
+    string TitleTooltip => Model?.Timeline.Type switch
+    {
+        TimelineNodeType.Raidwide => "Raidwide AoE",
+        TimelineNodeType.Tankbuster => "Tank Buster",
+        _ => ""
+    };
+
+    string FormatTimeSpan(TimeSpan? value)
+    {
+        return (value != null)
+            ? value.Value.ToString(@"m\:ss")
+            : " ";
+    }
+
+    string GetDamageTypeColor(string? damageType)
+    {
+        return damageType switch
+        {
+            "Magic" => "processing",
+            "Physical" => "success",
+            _ => "default"
+        };
+    }
+
+    private async Task HandleClick()
+    {
+        await Click.InvokeAsync();
+    }
+
+    private async Task HandleDrop(DragEventArgs e)
+    {
+        if (DragContext?.Data == null)
+            return;
+
+        await ActionDrop.InvokeAsync(DragContext.Data);
+    }
+
+    private async Task HandleActionClick(int actorId, ActionModel action)
+    {
+        await ActionClick.InvokeAsync(
+            new ActorAction
+            {
+                ActorId = actorId,
+                ActionName = action.Name
+            }
+        );
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            JS.InvokeVoidAsync("initTimelineItemDragEvents");
+        }
+    }
+}

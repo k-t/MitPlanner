@@ -1,0 +1,28 @@
+﻿@using AntDesign;
+@using MitPlanner.Model
+@using MitPlanner.Utilities;
+
+<div class="action-list" @onclick:stopPropagation="true" @onclick:preventDefault="true">
+    @foreach (var action in Actions)
+    {
+        <img src="@Helpers.GetActionImageUrl(action.Name)"
+            alt="@action.Title"
+            title="@action.Title"
+            draggable="false"
+            @onclick="@(() => HandleActionClick(action))" />
+    }
+</div>
+
+@code
+{
+    [Parameter]
+    public ICollection<ActionModel> Actions { get; set; } = Array.Empty<ActionModel>();
+
+    [Parameter]
+    public EventCallback<ActionModel> ActionClick { get; set; }
+
+    private async Task HandleActionClick(ActionModel action)
+    {
+        await ActionClick.InvokeAsync(action);
+    }
+}

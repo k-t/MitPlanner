@@ -1,0 +1,102 @@
+[
+  {
+    "id": "WAR",
+    "name": "Warrior",
+    "role": "tank"
+  },
+  {
+    "id": "DRK",
+    "name": "Dark Knight",
+    "role": "tank"
+  },
+  {
+    "id": "GNB",
+    "name": "Gunbreaker",
+    "role": "tank"
+  },
+  {
+    "id": "PLD",
+    "name": "Paladin",
+    "role": "tank"
+  },
+  {
+    "id": "SCH",
+    "name": "Scholar",
+    "role": "heal"
+  },
+  {
+    "id": "WHM",
+    "name": "White Mage",
+    "role": "heal"
+  },
+  {
+    "id": "AST",
+    "name": "Astrologian",
+    "role": "heal"
+  },
+  {
+    "id": "SGE",
+    "name": "Sage",
+    "role": "heal"
+  },
+  {
+    "id": "SGE",
+    "name": "Sage",
+    "role": "heal"
+  },
+  {
+    "id": "MNK",
+    "name": "Monk",
+    "role": "melee"
+  },
+  {
+    "id": "NIN",
+    "name": "Ninja",
+    "role": "melee"
+  },
+  {
+    "id": "SAM",
+    "name": "Samurai",
+    "role": "melee"
+  },
+  {
+    "id": "DRG",
+    "name": "Dragoon",
+    "role": "melee"
+  },
+  {
+    "id": "RPR",
+    "name": "Reaper",
+    "role": "melee"
+  },
+  {
+    "id": "MCH",
+    "name": "Machinist",
+    "role": "range"
+  },
+  {
+    "id": "BRD",
+    "name": "Bard",
+    "role": "range"
+  },
+  {
+    "id": "DNC",
+    "name": "Dancer",
+    "role": "range"
+  },
+  {
+    "id": "RDM",
+    "name": "Red Mage",
+    "role": "caster"
+  },
+  {
+    "id": "BLM",
+    "name": "Black Mage",
+    "role": "caster"
+  },
+  {
+    "id": "SMN",
+    "name": "Summoner",
+    "role": "caster"
+  }
+]

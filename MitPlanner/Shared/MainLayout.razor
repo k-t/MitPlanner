@@ -1,0 +1,46 @@
+﻿@using AntDesign
+@using MitPlanner.Components
+
+@inherits LayoutComponentBase
+
+<PageTitle>Mitigation Planner</PageTitle>
+
+<Layout>
+    <Header Class="header">
+        <h2>Mitigation Planner</h2>
+        <Menu Mode="MenuMode.Horizontal" Theme="MenuTheme.Dark" >
+            <MenuItem Key="1" RouterLink="p5s">
+                <span>P5S</span>
+            </MenuItem>
+            <MenuItem Key="2" RouterLink="p6s">
+                <span>P6S</span>
+            </MenuItem>
+            <MenuItem Key="3" RouterLink="p7s">
+                <span>P7S</span>
+            </MenuItem>
+        </Menu>
+    </Header>
+    <Content class="page-content">
+        @Body
+    </Content>
+</Layout>
+
+<style>
+
+    .header {
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        gap: 15px
+    }
+
+    .header h2 {
+        color: white;
+        margin: 0;
+    }
+
+    .page-content {
+        padding: 0 10px 10px 10px;
+    }
+
+</style>

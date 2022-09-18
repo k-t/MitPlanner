@@ -1,0 +1,712 @@
+{
+  "encounterName": "p7s",
+  "timeline": [
+    {
+      "start": 0.0,
+      "end": 0.0,
+      "name": "Pull",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 8.0,
+      "end": 12.0,
+      "name": "Spark of Life",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 19.0,
+      "end": 27.0,
+      "name": "Condensed/Dispersed Aero II",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 31.0,
+      "end": 34.0,
+      "name": "Blades of Attis (Indicator)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 37.0,
+      "end": 44.0,
+      "name": "Immortal's Obol",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 46.0,
+      "end": 58.0,
+      "name": "Blades of Attis (Action)",
+      "damageType": "Magical",
+      "actor": "Boss"
+    },
+    {
+      "start": 55.0,
+      "end": 58.0,
+      "name": "Forbidden Fruit",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 73.0,
+      "end": 80.0,
+      "name": "Bough of Attis (Slam)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 73.0,
+      "end": 80.0,
+      "name": "Hemitheos's Holy III",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 77.0,
+      "end": 80.0,
+      "name": "Stymphalian Strike",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": 77.0,
+      "end": 80.0,
+      "name": "Static Moon",
+      "damageType": "N/A",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 80.0,
+      "name": "Bough of Attis (Dash)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 84.0,
+      "end": 92.0,
+      "name": "Condensed/Dispersed Aero II",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 97.0,
+      "end": 102.0,
+      "name": "Spark of Life",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 107.0,
+      "end": 111.0,
+      "name": "Inviolate Bonds",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 115.0,
+      "end": 122.0,
+      "name": "Bough of Attis (Slam)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 121.0,
+      "name": "Hemitheos's Aero III (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 121.0,
+      "name": "Hemitheos's Holy III (2)",
+      "damageType": "Magic ",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 130.0,
+      "name": "Bough of Attis (Dash)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 132.0,
+      "name": "Hemitheos's Aero III (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 132.0,
+      "name": "Hemitheos's Holy III (2)",
+      "damageType": "Magic ",
+      "actor": "Boss"
+    },
+    {
+      "start": 135.0,
+      "end": 138.0,
+      "name": "Roots of Attis",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 149.0,
+      "end": 156.0,
+      "name": "Condensed/Dispersed Aero II",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 161.0,
+      "end": 165.0,
+      "name": "Forbidden Fruit",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 172.0,
+      "end": 175.0,
+      "name": "Multicast",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 175.0,
+      "end": 181.0,
+      "name": "Hemitheos's Aero IV",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 180.0,
+      "end": 185.0,
+      "name": "Hemitheos's Holy",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 183.0,
+      "end": 186.0,
+      "name": "Stymphalian Strike",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": 190.0,
+      "end": 193.0,
+      "name": "Roots of Attis",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 201.0,
+      "end": 205.0,
+      "name": "Forbidden Fruit",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": null,
+      "name": "Static Moon",
+      "damageType": "N/A",
+      "actor": "External Actor"
+    },
+    {
+      "start": 214.0,
+      "end": 223.0,
+      "name": "Hemitheos's Holy III",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 234.0,
+      "end": 241.0,
+      "name": "Bough of Attis (Slam)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 243.0,
+      "end": 248.0,
+      "name": "Bough of Attis (Dash)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 251.0,
+      "end": 259.0,
+      "name": "Condensed/Dispersed Aero II",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 261.0,
+      "end": 265.0,
+      "name": "Forbidden Fruit",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 283.0,
+      "end": 286.0,
+      "name": "Bullish Swipe",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 286.0,
+      "name": "Bullish Slash",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 286.0,
+      "name": "Static Path",
+      "damageType": "Magic",
+      "actor": "External Actor"
+    },
+    {
+      "start": 291.0,
+      "end": 294.0,
+      "name": "Blades of Attis (Indicator)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 297.0,
+      "end": 300.0,
+      "name": "Multicast",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 300.0,
+      "end": 306.0,
+      "name": "Hemitheos's Aero IV",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 303.0,
+      "end": 309.0,
+      "name": "Hemitheos's Holy III",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 307.0,
+      "end": 318.0,
+      "name": "Blades of Attis",
+      "damageType": "Magic ",
+      "actor": "Boss"
+    },
+    {
+      "start": 316.0,
+      "end": 323.0,
+      "name": "Condensed/Dispersed Aero II",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 329.0,
+      "end": 333.0,
+      "name": "Forbidden Fruit",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 342.0,
+      "name": "Shadow of Attis",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 353.0,
+      "name": "Bronze Bellows",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 354.0,
+      "name": "Burst",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 357.0,
+      "end": 362.0,
+      "name": "Spark of Life",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 370.0,
+      "end": 377.0,
+      "name": "Immortal's Obol",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 380.0,
+      "end": 384.0,
+      "name": "Forbidden Fruit",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 391.0,
+      "end": 395.0,
+      "name": "Inviolate Purgation",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 403.0,
+      "end": 429.0,
+      "name": "Light of Life",
+      "damageType": "Magic / Death? if cond. not met?",
+      "actor": "Boss"
+    },
+    {
+      "start": 404.0,
+      "end": 407.0,
+      "name": "Stymphalian Strike",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 406.0,
+      "name": "Hemitheos's Aero III (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 406.0,
+      "name": "Hemitheos's Holy III (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 408.0,
+      "end": 421.0,
+      "name": "Hemitheos's Tornado (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 408.0,
+      "end": 421.0,
+      "name": "Hemitheos's Glare III (1)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 421.0,
+      "name": "Hemitheos's Aero III (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 421.0,
+      "name": "Hemitheos's Holy III (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 429.0,
+      "name": "Light of Life Resolves",
+      "damageType": "Magic / Death? if cond. not met?",
+      "actor": "Boss"
+    },
+    {
+      "start": 434.0,
+      "end": 460.0,
+      "name": "Light of Life",
+      "damageType": "Magic / Death? if cond. not met?",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 436.0,
+      "name": "Hemitheos's Aero III (3)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 436.0,
+      "name": "Hemitheos's Holy III (3)",
+      "damageType": "Magic ",
+      "actor": "Boss"
+    },
+    {
+      "start": 422.0,
+      "end": 436.0,
+      "name": "Hemitheos's Tornado (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 422.0,
+      "end": 436.0,
+      "name": "Hemitheos's Glare III (2)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 451.0,
+      "name": "Hemitheos's Aero III (4)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 451.0,
+      "name": "Hemitheos's Holy III (4)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 438.0,
+      "end": 451.0,
+      "name": "Hemitheos's Tornado (3)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 438.0,
+      "end": 451.0,
+      "name": "Hemitheos's Glare III (3)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 460.0,
+      "name": "Light of Life Resolves",
+      "damageType": "Magic / Death? if cond. not met?",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 466.0,
+      "name": "Hemitheos's Tornado (3)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 466.0,
+      "name": "Hemitheos's Glare III (3)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 471.0,
+      "end": 475.0,
+      "name": "Forbidden Fruit",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 482.0,
+      "end": 485.0,
+      "name": "Roots of Attis",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 488.0,
+      "end": 493.0,
+      "name": "Hemitheos's Glare (Indicator)",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 497.0,
+      "end": 500.0,
+      "name": "Stymphalian Strike",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": 499.0,
+      "end": 503.0,
+      "name": "Hemitheos's Glare (Action)",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 503.0,
+      "end": 507.0,
+      "name": "Famine's Harvest",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 509.0,
+      "end": 512.0,
+      "name": "Forbidden Fruit",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 525.0,
+      "end": 528.0,
+      "name": "Stymphalian Strike",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": 525.0,
+      "end": 528.0,
+      "name": "Bullish Swipe",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 528.0,
+      "name": "Bullish Slash",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": 536.0,
+      "end": 540.0,
+      "name": "Death's Harvest",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 542.0,
+      "end": 545.0,
+      "name": "Forbidden Fruit",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 558.0,
+      "end": 561.0,
+      "name": "Static Path",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": 558.0,
+      "end": 561.0,
+      "name": "Static Moon",
+      "damageType": "N/A",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 561.0,
+      "name": "Static Path",
+      "damageType": "Magic",
+      "actor": "External Actor"
+    },
+    {
+      "start": 569.0,
+      "end": 573.0,
+      "name": "War's Harvest",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": 575.0,
+      "end": 578.0,
+      "name": "Forbidden Fruit",
+      "damageType": "Non-Damaging",
+      "actor": "Boss"
+    },
+    {
+      "start": null,
+      "end": 593.0,
+      "name": "Bullish Slash",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 593.0,
+      "name": "Bronze Bellows",
+      "damageType": "Physical",
+      "actor": "External Actor"
+    },
+    {
+      "start": null,
+      "end": 593.0,
+      "name": "Static Path",
+      "damageType": "Magic",
+      "actor": "External Actor"
+    },
+    {
+      "start": 601.0,
+      "end": 606.0,
+      "name": "Spark of Life",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 620.0,
+      "end": 627.0,
+      "name": "Bough of Attis (Slam)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 621.0,
+      "end": 627.0,
+      "name": "Hemitheos's Holy III",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 629.0,
+      "end": 634.0,
+      "name": "Bough of Attis (Dash)",
+      "damageType": "Physical",
+      "actor": "Boss"
+    },
+    {
+      "start": 637.0,
+      "end": 642.0,
+      "name": "Spark of Life",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 651.0,
+      "end": 656.0,
+      "name": "Spark of Life",
+      "damageType": "Magic",
+      "actor": "Boss"
+    },
+    {
+      "start": 663.0,
+      "end": 673.0,
+      "name": "Light of Life",
+      "damageType": "Death",
+      "actor": "Boss"
+    }
+  ]
+}
