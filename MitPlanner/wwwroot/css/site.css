@@ -98,13 +98,14 @@
     border-left: 1px solid #f0f0f0;
     padding: 8px 0;
     cursor: pointer;
+    gap: 5px;
 }
 
 .tl-header-col:hover {
     filter: brightness(96%) !important;
 }
 
-/* JobActionList */
+/* ActionList */
 
 .action-list {
     display: flex;
@@ -119,7 +120,7 @@
     cursor: pointer;
 }
 
-/* JobActionSelector */
+/* ActionSelector */
 
 .action-selector {
     background: #fff;
@@ -128,13 +129,30 @@
     padding: 8px 10px;
     display: flex;
     gap: 5px;
-    align-items: center;
+    align-items: start;
     justify-content: start;
 }
 
 .action-selector > .tl-title {
+    flex: 0 0 180px;
     margin: 0 10px;
     white-space: nowrap;
+}
+
+.actor-menu {
+    width: 180px;
+}
+
+.actor-btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.actor-btn .anticon {
+    vertical-align: -0.25em;
 }
 
 .action-tag-container {

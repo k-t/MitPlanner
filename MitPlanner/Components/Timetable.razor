@@ -11,10 +11,12 @@
 {
     <CascadingValue Value="@dragContext">
         <div class="header-container">
-            <ActionSelector Actor="@selectedActor"
+            <ActionSelector Actors="@model.Actors"
+                SelectedActor="@selectedActor"
                 Timeline="@model"
                 TimelineItem="@selectedItem"
-                ActionClick="HandleSelectorActionClick" />
+                ActionClick="HandleSelectorActionClick"
+                ActorClick="HandleActorClick" />
             <TimetableHeader Actors="@model.Actors"
                 SelectedActor="@selectedActor"
                 ActorClick="HandleActorClick" />

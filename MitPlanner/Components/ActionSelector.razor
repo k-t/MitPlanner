@@ -7,9 +7,26 @@
 @inject JobActionService JobActionService
 
 <div class="action-selector">
-    <div class="tl-title">@Actor?.JobTitle</div>
+    <div class="tl-title">
+        <Dropdown InlineFlexMode="true" Trigger="@(new Trigger[] { Trigger.Click })">
+            <Overlay>
+                <Menu Class="actor-menu">
+                    @foreach (var actor in Actors)
+                    {
+                        <MenuItem OnClick="_ => HandleActorClick(actor)">@actor.JobTitle</MenuItem>
+                    }
+                </Menu>
+            </Overlay>
+            <Unbound>
+                <Button Class="actor-btn" Block="true" NoSpanWrap="true" RefBack=@context>
+                    <span>@SelectedActor?.JobTitle</span> <Icon Type="down" />
+                </Button>
+            </Unbound>
+        </Dropdown>
+    </div>
     <div class="action-tag-container">
-        @foreach (var action in actions) {
+        @foreach (var action in actions)
+        {
             <ActionTag Action="@action"
                 State="GetActionState(action)"
                 Click="HandleActionClick"
@@ -25,7 +42,10 @@
     protected DragContext? DragContext { get; set; }
 
     [Parameter]
-    public ActorModel? Actor { get; set; }
+    public IReadOnlyCollection<ActorModel> Actors { get; set; } = Array.Empty<ActorModel>();
+
+    [Parameter]
+    public ActorModel? SelectedActor { get; set; }
 
     [Parameter]
     public TimetableModel? Timeline { get; set; }
@@ -36,13 +56,16 @@
     [Parameter]
     public EventCallback<ActorAction> ActionClick { get; set; }
 
+    [Parameter]
+    public EventCallback<ActorModel> ActorClick { get; set; }
+
     private IReadOnlyCollection<ActionModel> actions = Array.Empty<ActionModel>();
 
     protected override void OnParametersSet()
     {
-        if (Actor != null)
+        if (SelectedActor != null)
         {
-            actions = JobActionService.GetAllActions(Actor.JobId);
+            actions = JobActionService.GetAllActions(SelectedActor.JobId);
         }
         else
         {
@@ -52,10 +75,10 @@
 
     private ActionSelectionState GetActionState(ActionModel action)
     {
-        if (TimelineItem == null || Actor == null)
+        if (TimelineItem == null || SelectedActor == null)
             return ActionSelectionState.Default;
 
-        var actions = TimelineItem.GetActions(Actor.ActorId);
+        var actions = TimelineItem.GetActions(SelectedActor.ActorId);
         if (actions == null)
             return ActionSelectionState.Default;
 
@@ -69,7 +92,7 @@
 
             foreach (var item in Timeline.Items)
             {
-                if (item.Actions.Any(a => a.Key == Actor.ActorId && a.Value.Any(x => x.Name == action.Name)))
+                if (item.Actions.Any(a => a.Key == SelectedActor.ActorId && a.Value.Any(x => x.Name == action.Name)))
                 {
                     lastActionUsage = item;
                 }
@@ -96,18 +119,23 @@
 
     private async Task HandleActionClick(ActionModel action)
     {
-        if (Actor == null)
+        if (SelectedActor == null)
             return;
 
-        await ActionClick.InvokeAsync(new ActorAction(Actor.ActorId, action));
+        await ActionClick.InvokeAsync(new ActorAction(SelectedActor.ActorId, action));
+    }
+
+    private async Task HandleActorClick(ActorModel actor)
+    {
+        await ActorClick.InvokeAsync(actor);
     }
 
     private void HandleActionDragStart(ActionModel action)
     {
-        if (DragContext == null || Actor == null)
+        if (DragContext == null || SelectedActor == null)
             return;
 
-        DragContext.Data = new ActorAction(Actor.ActorId, action);
+        DragContext.Data = new ActorAction(SelectedActor.ActorId, action);
     }
 
     private void HandleActionDragEnd()

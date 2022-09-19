@@ -10,6 +10,7 @@
         <div class="tl-header-col @(actor == SelectedActor ? "tl-selected" : "")" title="@actor.JobTitle"
              @onclick="@(() => HandleActorClick(actor))">
             <img src="@Helpers.GetJobImageUrl(actor.JobId)" alt="@actor.JobTitle" />
+            <span>@actor.JobId</span>
         </div>
     }
 </div>
